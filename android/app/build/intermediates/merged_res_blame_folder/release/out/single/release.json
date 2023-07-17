@@ -1,0 +1,326 @@
+[
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round_1.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_round_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_src_assets_icons_email.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\src_assets_icons_email.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backiconmask.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\node_modules_reactnavigation_elements_src_assets_backiconmask.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxxhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxxhdpi\\node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxxhdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxhdpi\\ic_launcher_round.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xhdpi\\node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round_1.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-mdpi\\ic_launcher_round_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_src_assets_logo_avatar.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\src_assets_logo_avatar.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_1.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xhdpi\\ic_launcher_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xhdpi\\node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-hdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-hdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round_1.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxhdpi\\ic_launcher_round_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher_1.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-mdpi\\ic_launcher_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round_1.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-hdpi\\ic_launcher_round_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round_1.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xhdpi\\ic_launcher_round_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xhdpi\\ic_launcher.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxxhdpi\\ic_launcher.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxhdpi\\node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_src_assets_logo_tabish_logo.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\src_assets_logo_tabish_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xhdpi\\node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-hdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-hdpi\\node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-hdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-hdpi\\node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_2.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_src_assets_icons_telephone.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\src_assets_icons_telephone.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_round.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxhdpi\\node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxhdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxhdpi\\node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher_2.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-hdpi\\ic_launcher_2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xhdpi\\ic_launcher_round.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxxhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxxhdpi\\node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable_rn_edit_text_material.xml.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\drawable\\rn_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-mdpi\\ic_launcher_round.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-hdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-hdpi\\node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-hdpi\\ic_launcher.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher_2.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-mdpi\\ic_launcher_2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher_1.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-hdpi\\ic_launcher_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_node_modules_reactnativepaper_src_assets_backchevron.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\node_modules_reactnativepaper_src_assets_backchevron.png"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.tabishcorporation.app-main-34:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-hdpi\\ic_launcher_round.jpg"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.tabishcorporation.app-main-34:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.tabishcorporation.app-main-34:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xhdpi\\node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xhdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxhdpi\\node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_1.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxxhdpi\\ic_launcher_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_src_assets_icons_department.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\src_assets_icons_department.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxhdpi\\ic_launcher.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxxhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxxhdpi\\node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-hdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-hdpi\\node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxhdpi_node_modules_reactnativecalendars_src_calendar_img_next.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxhdpi\\node_modules_reactnativecalendars_src_calendar_img_next.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_src_assets_icons_job.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\src_assets_icons_job.jpg"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.tabishcorporation.app-main-34:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-mdpi\\ic_launcher.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-hdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-hdpi\\node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.tabishcorporation.app-main-34:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xhdpi_node_modules_reactnativecalendars_src_img_up.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xhdpi\\node_modules_reactnativecalendars_src_img_up.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_2.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxhdpi\\ic_launcher_2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxxhdpi_node_modules_reactnativecalendars_src_calendar_img_previous.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxxhdpi\\node_modules_reactnativecalendars_src_calendar_img_previous.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_2.jpg.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xhdpi\\ic_launcher_2.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_1.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-34:\\mipmap-xxhdpi\\ic_launcher_1.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxxhdpi_node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxxhdpi\\node_modules_reactnavigation_drawer_src_views_assets_toggledrawericon.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_src_assets_icons_calendar.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\src_assets_icons_calendar.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_node_modules_reactnativecalendars_src_img_down.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\node_modules_reactnativecalendars_src_img_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_src_assets_icons_location.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\src_assets_icons_location.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_src_assets_icons_manager.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\src_assets_icons_manager.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-mdpi_src_assets_icons_idcard.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-mdpi\\src_assets_icons_idcard.png"
+    },
+    {
+        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable-xxhdpi_node_modules_reactnavigation_elements_src_assets_backicon.png.flat",
+        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-react-28:\\drawable-xxhdpi\\node_modules_reactnavigation_elements_src_assets_backicon.png"
+    }
+]
