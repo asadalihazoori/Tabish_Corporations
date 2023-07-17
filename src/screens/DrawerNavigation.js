@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View, StyleSheet, Image } from 'react-native'
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
 import { Avatar, Title, Caption, Drawer, Text } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -16,6 +16,7 @@ import LeaveRequest from './LeaveRequest';
 import Payslip from './Payslip';
 import Loans from './Loans';
 import AddCustomer from './AddCustomer';
+import CustomerList from './CustomerList';
 
 const ODrawer = createDrawerNavigator();
 
@@ -86,7 +87,9 @@ export default function DrawerNavigation() {
               /> */}
               <DrawerItem
                 icon={({ color, size }) => (
-                  <Icon name="send-check-outline" color={color} size={size} style={{ color: COLORS.blue }} />
+                  // <Icon name="list-status" color={color} size={size} style={{ color: COLORS.blue }} />
+                  <Icon name="exit-run" color={color} size={size} style={{ color: COLORS.blue }} />
+                  // <Icon name="send-check-outline" color={color} size={size} style={{ color: COLORS.blue }} />
                 )}
                 label={() => <Text style={{ color: COLORS.black }}>Leave Status</Text>}
                 onPress={() => {
@@ -118,6 +121,16 @@ export default function DrawerNavigation() {
                 label={() => <Text style={{ color: COLORS.black }}>Add Customer</Text>}
                 onPress={() => {
                   props.navigation.navigate('Add Customer');
+                }}
+              />
+              <DrawerItem
+                icon={({ color, size }) => (
+                  // <Image source={require('../assets/icons/customer.png')} style={{height: size, width: size, tintColor: COLORS.blue}} />
+                  <Icon name="account-box-multiple-outline" color={color} size={size} style={{ color: COLORS.blue }} />
+                )}
+                label={() => <Text style={{ color: COLORS.black }}>Customers List</Text>}
+                onPress={() => {
+                  props.navigation.navigate('Customers List');
                 }}
               />
             </Drawer.Section>
@@ -153,6 +166,7 @@ export default function DrawerNavigation() {
       <ODrawer.Screen name="Payslip" component={Payslip} />
       <ODrawer.Screen name="Loans / Advances" component={Loans} />
       <ODrawer.Screen name="Add Customer" component={AddCustomer} />
+      <ODrawer.Screen name="Customers List" component={CustomerList} />
     </ODrawer.Navigator>
   );
 }
@@ -180,5 +194,11 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     borderTopColor: '#f4f4f4',
     borderTopWidth: 1,
+  },
+  infoIcon: {
+    // width: 20,
+    // height: 20,
+
+    // backgroundColor: 'red'
   },
 });
