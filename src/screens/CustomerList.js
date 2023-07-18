@@ -157,9 +157,12 @@ export default function CustomerList({ navigation }) {
   const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
-    getProfile();
-  }, []);
+    const unsubscribe = navigation.addListener('focus', () => {
+      getProfile();
+    });
 
+    return unsubscribe;
+  }, [navigation]);
   function getProfile() {
     CustomerAPI.getCustomer().then((data) => {
       if (data) {

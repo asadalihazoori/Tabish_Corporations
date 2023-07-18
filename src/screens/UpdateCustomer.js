@@ -15,6 +15,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 export default function UpdateCustomer({ route }) {
     const { customer } = route.params;
     const [inputs, setInputs] = React.useState({
+        id: customer.customer_id,
         name: customer.customer_name,
         phone: customer.phone,
         address: customer.customer_address,
@@ -47,7 +48,7 @@ export default function UpdateCustomer({ route }) {
         //     ['latitude']: customer.store_latitude,
         //     ['longitude']: customer.store_longitude
         // }));
-        console.log(customer);
+        // console.log(customer);
         // getAttributes();
     }, [])
 
@@ -86,9 +87,9 @@ export default function UpdateCustomer({ route }) {
 
         if (isValid) {
             addCustomer();
-            console.log("ok")
+            // console.log("ok")
 
-        }
+        } 
     };
 
 
@@ -96,12 +97,12 @@ export default function UpdateCustomer({ route }) {
         if (inputs.base64Img1 != null && inputs.base64Img2 != null, inputs.base64Img3 != null) {
 
             setLoading(true);
-            CustomerAPI.AddCustomer(inputs)
+            CustomerAPI.UpdateCustomer(inputs)
                 .then((result) => {
-                    console.log(result)
-                    if (result.result.status == 200) {
+                    // console.log(result)
+                    if (result.result.id != null) {
 
-                        handleAlert("Confirmation", "Customer Registered Successfully.", "clipboard-check-outline", false)
+                        handleAlert("Confirmation", "Customer Updated Successfully.", "clipboard-check-outline", false)
                         setLoading(false);
                     }
                 })
@@ -241,7 +242,7 @@ export default function UpdateCustomer({ route }) {
                         onPress={() => takePhoto(2)}
                         style={[styles.imagebox, { marginLeft: 14, borderColor: selectedImages.includes(2) ? 'transparent' : COLORS.red, }]}>
                         {image2 ? (
-                            <Image source={{ uri: customer.images[1] }} style={{ width: 100, height: 100, borderRadius: 0 }} />
+                            <Image source={{ uri: image2 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
                         ) : (
                             <Image source={require('../assets/store-icon1.png')} style={{ width: 60, height: 60, borderRadius: 0 }} />
                         )}

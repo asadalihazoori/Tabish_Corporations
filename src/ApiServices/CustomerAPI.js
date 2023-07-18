@@ -71,4 +71,42 @@ export default class CustomerAPI extends Component {
 
   }
 
+  static UpdateCustomer(inputs) {
+    const headers = {
+      'Content-Type': 'application/json',
+    };
+
+    const dataApi = {
+      "id": inputs.id,
+      "customer_name": inputs.name,
+      "customer_address": inputs.address,
+      "phone": inputs.phone,
+      "store_longitude": inputs.latitude,
+      "store_latitude": inputs.longitude,
+      "image_1": inputs.base64Img1,
+      "image_2": inputs.base64Img2,
+      "image_3": inputs.base64Img3,
+
+    };
+
+    const requestOptions = {
+      method: 'POST',
+      headers: headers,
+      data: JSON.stringify(dataApi),
+      url: `http://3.1.62.217:8069/editCustomer/`
+    };
+
+    return axios(requestOptions)
+      .then(response => {
+        return response.data;
+      })
+      .catch(error => {
+        console.error(error);
+        throw error;
+      });
+
+
+  }
+
+
 }

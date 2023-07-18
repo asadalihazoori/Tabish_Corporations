@@ -11,6 +11,7 @@ import CustomerAPI from '../ApiServices/CustomerAPI';
 import LoginRMS from '../ApiServices/LoginRMS';
 import CustomAlert from '../components/CustomAlert';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 export default function AddCustomer({ navigation }) {
   const [inputs, setInputs] = React.useState({
     name: null,
@@ -37,15 +38,38 @@ export default function AddCustomer({ navigation }) {
     icon: null,
     confirmBtn: false
   });
-
-  useEffect(() => {
-    getAttributes();
-  }, [])
-
-
   const onCloseAlert = () => {
     setAlertBox(prevState => ({ ...prevState, ["showBox"]: false }));
   };
+
+
+  // useEffect(() => {
+  //   getAttributes();
+  // }, [])
+
+  useEffect(() => {
+    const unsubscribe = navigation.addListener('focus', () => {
+      getAttributes();
+      setInputs({
+        name: null,
+        phone: null,
+        address: null,
+        base64Img1: null,
+        base64Img2: null,
+        base64Img3: null,
+        latitude: null,
+        longitude: null,
+      });
+      setImage1(null);
+      setImage2(null);
+      setImage3(null);
+      setSelectedImages([]);
+    });
+
+    return unsubscribe;
+  }, [navigation]);
+
+
 
   const handleAlert = (title, message, icon, confirmBtn) => {
     setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: title, ["message"]: message, ["icon"]: icon, ["confirmBtn"]: confirmBtn }));
@@ -94,9 +118,9 @@ export default function AddCustomer({ navigation }) {
         .then((result) => {
           console.log(result)
           if (result.result.status == 200) {
-            // submitAttendance(false);
 
-            handleAlert("Confirmation", "Customer Registered Successfully.", "clipboard-check-outline", false)
+            handleAlert("Confirmation", "Customer Registered Successfully.", "clipboard-check-outline", false);
+
             setLoading(false);
           }
         })
@@ -113,12 +137,6 @@ export default function AddCustomer({ navigation }) {
   };
   const handleError = (error, input) => {
     setErrors(prevState => ({ ...prevState, [input]: error }));
-  };
-  const onConfirmAlert = () => {
-    setAlertBox(prevState => ({ ...prevState, ["confirmBtn"]: true }));
-    setAlertBox(prevState => ({ ...prevState, ["showBox"]: false }));
-
-
   };
 
 
@@ -248,10 +266,10 @@ export default function AddCustomer({ navigation }) {
               <Image source={{ uri: image3 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
             ) : (
               <Image source={require('../assets/store-icon1.png')} style={{ width: 60, height: 60, borderRadius: 0 }} />
-            //   <Icon
-            //   name='office-building'
-            //   style={{  fontSize:70, color: COLORS.blue, }}
-            // />
+              //   <Icon
+              //   name='office-building'
+              //   style={{  fontSize:70, color: COLORS.blue, }}
+              // />
             )}
           </TouchableOpacity>
         </View>
@@ -261,7 +279,7 @@ export default function AddCustomer({ navigation }) {
             onPress={validate}
           />
         </View>
-        <CustomAlert visible={alertBox.showBox} onConfirm={onConfirmAlert} confirmBtn={alertBox.confirmBtn} onClose={onCloseAlert} title={alertBox.title} message={alertBox.message} icon={alertBox.icon} />
+        <CustomAlert visible={alertBox.showBox} onClose={onCloseAlert} title={alertBox.title} message={alertBox.message} icon={alertBox.icon} />
       </View>
 
     </View>
