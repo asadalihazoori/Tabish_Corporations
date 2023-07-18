@@ -6,7 +6,6 @@ import DrawerNavigation from './src/screens/DrawerNavigation';
 const Stack = createStackNavigator();
 
 export default function App() {
-    console.log("App.js Called");
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName='Login'>

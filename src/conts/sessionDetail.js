@@ -69,7 +69,7 @@ Object.defineProperty(sessionDetail, 'profile_image', {
 
 Object.defineProperty(sessionDetail, 'employee_name', {
 
-    value: "",
+    value: "Asad",
     writable: true,
     enumerable: true,
     configurable: true

@@ -83,7 +83,7 @@ export default function Attendance({ navigation }) {
         setData(prevState => ({ ...prevState, ['longitude']: longitude }));
 
         const distance = CheckDistance({ latitude, longitude });
-        setDistance(distance);
+        setDistance(distance.toFixed(2));
         console.log("distance", distance);
         // if (distance > 50) {
         //   handleAlert("Out of Range", `You are ${distance} meters away from WareHouse`, "warehouse", false);
