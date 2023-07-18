@@ -44,7 +44,7 @@ export default class LoginAPI extends Component {
             ],
             "kwargs": {
               "fields": [
-                "id", "schedule", "department_id"
+                "id", "schedule", "department_id", "job_id", "image", "name"
               ]
             }
           }
@@ -65,11 +65,16 @@ export default class LoginAPI extends Component {
         sessionDetail.Department = data.result[0].department_id[0];
         sessionDetail.shift = data.result[0].schedule[0];
         sessionDetail.Id = id;
+
+        const base64String = data.result[0].image;
+        sessionDetail.employee_name = data.result[0].name;
+        sessionDetail.profile_image = `data:image/png;base64,${base64String}`;
+        sessionDetail.job_title = data.result[0].job_id[1];
         return id;
       })
       .catch(error => {
         return error;
-
       });
   }
 }
+

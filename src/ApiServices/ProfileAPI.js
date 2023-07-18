@@ -49,10 +49,6 @@ export default class ProfileAPI extends Component {
         return fetch(`http://${sessionDetail.server_Ip}/web/dataset/call_kw/`, requestOptions)
             .then(response => response.json())
             .then(data => {
-                const base64String = data.result[0].image;
-                sessionDetail.employee_name = data.result[0].name;
-                sessionDetail.profile_image = `data:image/png;base64,${base64String}`;
-                sessionDetail.job_title = data.result[0].job_id[1];
                 return data;
             })
             .catch(error => alert('Network Error', error));

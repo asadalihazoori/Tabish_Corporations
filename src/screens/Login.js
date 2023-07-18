@@ -5,7 +5,6 @@ import CustomButton from '../components/Button';
 import Input from '../components/Input';
 import Loader from '../components/Loader';
 import LoginAPI from '../ApiServices/LoginAPI';
-import ProfileAPI from '../ApiServices/ProfileAPI';
 import ErrorBox from '../components/ErrorBox';
 
 export default function Login({ navigation, route }) {
@@ -37,26 +36,24 @@ export default function Login({ navigation, route }) {
                     if (Number.isInteger(response)) {
                         return true;
                     }
-                    else if(response.message ==  "Cannot convert undefined value to object"){
-                    handleError('', 'username');
-                    setLoading(false);
-                    handleError('Incorrect username or password', 'password');
+                    else if (response.message == "Cannot convert undefined value to object") {
+                        handleError('', 'username');
+                        setLoading(false);
+                        handleError('Incorrect username or password', 'password');
                     }
-                    else if (response.message ==  "Network request failed"){
+                    else if (response.message == "Network request failed") {
                         setAlertBox(prevState => ({ ...prevState, ["showBox"]: true }));
                         setAlertBox(prevState => ({ ...prevState, ["title"]: "Internet Required" }));
                         setAlertBox(prevState => ({ ...prevState, ["message"]: "Network Request Failed" }));
                         setLoading(false);
-                        return false;   
+                        return false;
                     }
                 }
 
             }).then((response) => {
                 if (response == true) {
-                    ProfileAPI.getProfile().then(() => {
-                        setLoading(false);
-                        navigation.navigate("DrawerNavigation");
-                    })
+                    setLoading(false);
+                    navigation.navigate("DrawerNavigation");
                 }
             })
             .catch(error => {
@@ -119,8 +116,8 @@ export default function Login({ navigation, route }) {
                     error={errors.password}
                     password
                 />
-                <View style={{marginTop:30}}>
-                <CustomButton  title="Login" onPress={validate} />
+                <View style={{ marginTop: 30 }}>
+                    <CustomButton title="Login" onPress={validate} />
                 </View>
             </View>
             <ErrorBox visible={alertBox.showBox} onClose={onCloseAlert} title={alertBox.title} message={alertBox.message} />
