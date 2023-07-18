@@ -17,6 +17,7 @@ import Payslip from './Payslip';
 import Loans from './Loans';
 import AddCustomer from './AddCustomer';
 import CustomerList from './CustomerList';
+import UpdateCustomer from './UpdateCustomer';
 
 const ODrawer = createDrawerNavigator();
 
@@ -167,6 +168,7 @@ export default function DrawerNavigation() {
       <ODrawer.Screen name="Loans / Advances" component={Loans} />
       <ODrawer.Screen name="Add Customer" component={AddCustomer} />
       <ODrawer.Screen name="Customers List" component={CustomerList} />
+      <ODrawer.Screen name="Update Customers" component={UpdateCustomer} />
     </ODrawer.Navigator>
   );
 }

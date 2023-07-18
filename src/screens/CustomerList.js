@@ -1,85 +1,209 @@
-import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
-import React, { useEffect, useState } from 'react'
+// import { View, Text, Image, StyleSheet, TouchableOpacity, FlatList } from 'react-native'
+// import React, { useEffect, useState } from 'react'
+// import Loader from '../components/Loader';
+// import COLORS from '../conts/colors';
+// import CustomerAPI from '../ApiServices/CustomerAPI';
+// import Search from '../components/Search';
+// import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
+// export default function CustomerList() {
+//   const [loading, setLoading] = React.useState(true);
+//   const [customers, setCustomers] = React.useState([]);
+//   const [searchQuery, setSearchQuery] = useState('');
+//   const [filteredData, setFilteredData] = useState([]);
+//   useEffect(() => {
+//     getProfile();
+//   }, []);
+
+//   function getProfile() {
+//     CustomerAPI.getCustomer()
+//       .then((data) => {
+//         if (data) {
+//           setCustomers(data.result);
+//           setLoading(false);
+//         }
+//         else {
+//           setLoading(false);
+
+//         }
+//       });
+
+//   }
+//   const handleSearch = (text) => {
+//     setSearchQuery(text);
+//     const filteredData = customers.filter(item => item.customer_name.toLowerCase().includes(text.toLowerCase()));
+//     setFilteredData(filteredData);
+//   };
+
+//   const renderCustomerItem = ({ item }) => (
+//     <TouchableOpacity style={styles.container}>
+//       <Text style={styles.name}>{item.customer_name}</Text>
+//       {item.customer_address &&
+//         <View style={styles.infoRow}>
+//           <Icon name="map-marker-outline" color={COLORS.red} size={16} style={styles.infoIcon} />
+//           <Text style={styles.infoText}>{item.customer_address}</Text>
+//         </View>}
+//     </TouchableOpacity>
+//   );
+
+//   return (
+//     <View style={{ width: '100%', }}>
+//       <Loader visible={loading} />
+
+//       <View style={styles.mainContainer}>
+//         <Search onSearch={handleSearch} searchValue={searchQuery} />
+
+//         <FlatList
+//           data={searchQuery ? filteredData : customers}
+//           renderItem={renderCustomerItem}
+//           keyExtractor={(item) => item.customer_id.toString()}
+//         />
+
+
+//       </View>
+//     </View>
+//   )
+
+// }
+
+// const styles = StyleSheet.create({
+//   mainContainer: {
+//     backgroundColor: '#FFFFFF',
+//     borderRadius: 10,
+//     marginTop: "4%",
+//     padding: 17,
+//     shadowColor: '#000',
+//     shadowOffset: {
+//       width: 0,
+//       height: 2,
+//     },
+//     shadowOpacity: 0.25,
+//     shadowRadius: 3.84,
+//     elevation: 5,
+//     marginHorizontal: 10,
+//     // borderWidth: 1,
+//     // borderColor: "green"
+
+
+//   },
+//   container: {
+//     width: '100%',
+//     backgroundColor: COLORS.light,
+//     borderRadius: 10,
+//     padding: 14,
+//     marginTop: "5%",
+//     // borderWidth: 1,
+//     // borderColor: "pink"
+//   },
+//   profileImage: {
+//     width: 120,
+//     height: 120,
+//     borderRadius: 60,
+//   },
+//   name: {
+//     fontSize: 18,
+//     fontWeight: 'bold',
+//     color: "#000000",
+//   },
+
+//   infoRow: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     marginTop: 10,
+//   },
+//   infoIcon: {
+//     marginRight: '2%',
+//     color: COLORS.blue,
+//   },
+//   infoText: {
+//     color: '#000000',
+//     fontSize: 14,
+//   },
+// });
+
+
+import React, { useEffect, useState, PureComponent } from 'react';
+import { View, Text, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 import Loader from '../components/Loader';
-import ProfileAPI from '../ApiServices/ProfileAPI';
 import COLORS from '../conts/colors';
+import CustomerAPI from '../ApiServices/CustomerAPI';
+import Search from '../components/Search';
 
-export default function CustomerList() {
-  const [loading, setLoading] = React.useState(true);
-  const [imageSource, setimageSource] = useState(null);
-  const [name, setName] = useState(null);
-  const [job_title, setJob_id] = useState(null);
-  const [identification_id, setIdentification_id] = useState(null);
-  const [first_email, setFirst_email] = useState(null);
-  const [department_id, setDepartment_id] = useState(null);
-  const [phone, setPhone] = useState(null);
-  const [home_address, setHome_address] = useState(null);
-  const [joining_date, setJoining_date] = useState(null);
-  const [manager, setManager] = useState(null);
+class CustomerItem extends PureComponent {
+  render() {
+    const { item, navigation } = this.props;
 
-  const [showInfo, setShowInfo] = useState(false);
+    return (
+      <TouchableOpacity style={styles.container}
+        onPress={() => navigation.navigate('Update Customers', { customer: item })}>
+        <Text style={styles.name}>{item.customer_name}</Text>
+        {item.customer_address && (
+          <View style={styles.infoRow}>
+            <Icon name="map-marker-outline" color={COLORS.red} size={16} style={styles.infoIcon} />
+            <Text style={styles.infoText}>{item.customer_address}</Text>
+          </View>
+        )}
+      </TouchableOpacity>
+    );
+  }
+}
+
+export default function CustomerList({ navigation }) {
+  const [loading, setLoading] = useState(true);
+  const [customers, setCustomers] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
     getProfile();
   }, []);
 
   function getProfile() {
-    ProfileAPI.getProfile()
-      .then((data) => {
-        if (data) {
-
-          const base64String = data.result[0].image;
-          setimageSource(`data:image/png;base64,${base64String}`);
-          setName(data.result[0].name);
-          setJob_id(data.result[0].job_id[1]);
-          setPhone(data.result[0].phone);
-          setIdentification_id(data.result[0].identification_id);
-          setDepartment_id(data.result[0].department_id[1]);
-          setFirst_email(data.result[0].first_email);
-          setHome_address(data.result[0].home_address);
-          setJoining_date(data.result[0].joining_date);
-          setManager(data.result[0].parent_id[1])
-          setLoading(false);
-        }
-        else {
-          setLoading(false);
-
-        }
-      });
-
+    CustomerAPI.getCustomer().then((data) => {
+      if (data) {
+        setCustomers(data.result);
+        setLoading(false);
+      } else {
+        setLoading(false);
+      }
+    });
   }
 
-  const handlePress = () => {
-    setShowInfo(!showInfo);
+  const handleSearch = (text) => {
+    setSearchQuery(text);
+    const filteredData = customers.filter((item) =>
+      item.customer_name.toLowerCase().includes(text.toLowerCase())
+    );
+    setFilteredData(filteredData);
   };
 
+  const renderCustomerItem = ({ item }) => <CustomerItem item={item} navigation={navigation} />;
 
-  if (loading == false) {
-    return (
-      <View style={{ width: '100%', alignItems: 'center' }}>
-
-        <View style={styles.mainContainer}>
-          
-          <Text style={styles.headerText}>Customer List</Text>
-
-        </View>
-      </View>
-    )
-  }
-  else {
-    return (
+  return (
+    <View style={{ width: '100%' }}>
       <Loader visible={loading} />
-    );
-  }
+
+      <View style={styles.mainContainer}>
+        <Search onSearch={handleSearch} searchValue={searchQuery} />
+
+        <FlatList
+          data={searchQuery ? filteredData : customers}
+          renderItem={renderCustomerItem}
+          keyExtractor={(item) => item.customer_id.toString()}
+        />
+      </View>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
   mainContainer: {
-    width: '90%',
     backgroundColor: '#FFFFFF',
     borderRadius: 10,
-    marginTop: 30,
-    padding: 20,
+    marginTop: '4%',
+    padding: 17,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
@@ -88,44 +212,28 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+    marginHorizontal: 10,
   },
   container: {
     width: '100%',
-    backgroundColor: COLORS.blue,
+    backgroundColor: COLORS.light,
     borderRadius: 10,
     padding: 14,
-    marginTop: 20,
-  },
-  profileImage: {
-    width: 120,
-    height: 120,
-    borderRadius: 60,
+    marginTop: '5%',
   },
   name: {
-    fontSize: 24,
+    fontSize: 18,
     fontWeight: 'bold',
-    marginTop: 10,
-    color: "#000000",
-  },
-
-  header: {
-    alignItems: 'center',
-    marginTop: 10,
-  },
-  headerText: {
-    color: "#000000",
-    fontSize: 16,
-    fontWeight: 'bold',
+    color: '#000000',
   },
   infoRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 15,
+    marginTop: 10,
   },
   infoIcon: {
-    width: 20,
-    height: 20,
-    marginRight: 10,
+    marginRight: '2%',
+    color: COLORS.blue,
   },
   infoText: {
     color: '#000000',
