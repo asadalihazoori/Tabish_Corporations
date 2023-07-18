@@ -27,10 +27,10 @@ export default function UpdateCustomer({ route }) {
     });
     const [errors, setErrors] = React.useState({});
     const [loading, setLoading] = React.useState(false);
-    const [image1, setImage1] = useState(customer.images[0]);
-    const [image2, setImage2] = useState(customer.images[1]);
-    const [image3, setImage3] = useState(customer.images[2]);
-    const [selectedImages, setSelectedImages] = React.useState([]);
+    const [image1, setImage1] = useState(`data:image/png;base64,${customer.images[0]}`);
+    const [image2, setImage2] = useState(`data:image/png;base64,${customer.images[1]}`);
+    const [image3, setImage3] = useState(`data:image/png;base64,${customer.images[2]}`);
+    const [selectedImages, setSelectedImages] = React.useState([1,2,3]);
 
     const [alertBox, setAlertBox] = useState({
         showBox: false,
@@ -89,7 +89,7 @@ export default function UpdateCustomer({ route }) {
             addCustomer();
             // console.log("ok")
 
-        } 
+        }
     };
 
 
@@ -99,8 +99,8 @@ export default function UpdateCustomer({ route }) {
             setLoading(true);
             CustomerAPI.UpdateCustomer(inputs)
                 .then((result) => {
-                    // console.log(result)
-                    if (result.result.id != null) {
+                    console.log(result)
+                    if (result.id != null) {
 
                         handleAlert("Confirmation", "Customer Updated Successfully.", "clipboard-check-outline", false)
                         setLoading(false);

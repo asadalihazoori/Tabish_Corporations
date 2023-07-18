@@ -76,18 +76,24 @@ export default class CustomerAPI extends Component {
       'Content-Type': 'application/json',
     };
 
-    const dataApi = {
-      "id": inputs.id,
-      "customer_name": inputs.name,
-      "customer_address": inputs.address,
-      "phone": inputs.phone,
-      "store_longitude": inputs.latitude,
-      "store_latitude": inputs.longitude,
-      "image_1": inputs.base64Img1,
-      "image_2": inputs.base64Img2,
-      "image_3": inputs.base64Img3,
+    const dataApi =
 
-    };
+    {
+      "params": {
+        "id": 6695,
+        "customer_name": "asad ali ali",
+        "customer_address": "Khushab Pakistan",
+        "store_longitude": "302",
+        "store_latitude": "420",
+        "store_landmark": "69",
+        "phone": "",
+        "image_1": inputs.base64Img1,
+        "image_2": inputs.base64Img2,
+        "image_3": inputs.base64Img3,
+
+        "image_1920": inputs.base64Img1
+      }
+    }
 
     const requestOptions = {
       method: 'POST',
