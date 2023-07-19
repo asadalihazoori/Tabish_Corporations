@@ -1,126 +1,86 @@
 [
     {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round_1.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round_1.png"
-    },
-    {
-        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.tabishcorporation.app-main-35:/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.jpg.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round.jpg"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round_1.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-mdpi\\ic_launcher_round_1.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_1.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xhdpi\\ic_launcher_1.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.jpg.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-hdpi\\ic_launcher_round.jpg"
-    },
-    {
-        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.tabishcorporation.app-main-35:/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round_1.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round_1.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher_1.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-mdpi\\ic_launcher_1.png"
-    },
-    {
-        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.tabishcorporation.app-main-35:/mipmap-xhdpi/ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round_1.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-hdpi\\ic_launcher_round_1.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round_1.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xhdpi\\ic_launcher_round_1.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_1.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_1.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-mdpi\\ic_launcher_round.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.jpg.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.jpg"
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-mdpi_ic_launcher_1.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-mdpi/ic_launcher_1.png"
     },
     {
         "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "com.tabishcorporation.app-main-35:/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.jpg.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.jpg"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\drawable_rn_edit_text_material.xml.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\drawable\\rn_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round_1.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xhdpi/ic_launcher_round_1.png"
     },
     {
         "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-hdpi_ic_launcher.png.flat",
         "source": "com.tabishcorporation.app-main-35:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.jpg.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-mdpi\\ic_launcher_round.jpg"
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-hdpi\\ic_launcher_round.png"
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xhdpi_ic_launcher_1.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xhdpi/ic_launcher_1.png"
     },
     {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_1.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xxhdpi\\ic_launcher_1.png"
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.jpg.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-hdpi/ic_launcher_round.jpg"
     },
     {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.jpg.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.jpg"
     },
     {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-hdpi_ic_launcher_1.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-hdpi\\ic_launcher_1.png"
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_1.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xxxhdpi/ic_launcher_1.png"
     },
     {
-        "merged": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\Hazoori\\.gradle\\daemon\\7.5.1\\com.tabishcorporation.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "com.tabishcorporation.app-merged_res-33:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.tabishcorporation.app-main-35:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.jpg.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xxhdpi/ic_launcher_round.jpg"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round_1.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xxhdpi/ic_launcher_round_1.png"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.jpg.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xhdpi/ic_launcher_round.jpg"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-mdpi_ic_launcher_round_1.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-mdpi/ic_launcher_round_1.png"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-hdpi_ic_launcher_1.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-hdpi/ic_launcher_1.png"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_1.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xxhdpi/ic_launcher_1.png"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.jpg.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-mdpi/ic_launcher_round.jpg"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-hdpi_ic_launcher_round_1.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-hdpi/ic_launcher_round_1.png"
+    },
+    {
+        "merged": "com.tabishcorporation.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round_1.png.flat",
+        "source": "com.tabishcorporation.app-main-35:/mipmap-xxxhdpi/ic_launcher_round_1.png"
     }
 ]

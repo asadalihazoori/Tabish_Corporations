@@ -1,9 +1,9 @@
 <libraries>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-android-location-enabler::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\react-native-android-location-enabler\android\build\.transforms\866193a507b301f3caf635320935444b\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\react-native-android-location-enabler\android\build\.transforms\866193a507b301f3caf635320935444b\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-android-location-enabler::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-enabler\android\build\.transforms\5da451379c61a0c086df56395c970722\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-enabler\android\build\.transforms\5da451379c61a0c086df56395c970722\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-android-location-enabler:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\react-native-android-location-enabler\android\build\.transforms\866193a507b301f3caf635320935444b\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-enabler\android\build\.transforms\5da451379c61a0c086df56395c970722\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -52,10 +52,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-community_geolocation::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\@react-native-community\geolocation\android\build\.transforms\1d115812f36b947d4dc281a7213a99b3\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\@react-native-community\geolocation\android\build\.transforms\1d115812f36b947d4dc281a7213a99b3\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-community_geolocation::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\@react-native-community\geolocation\android\build\.transforms\326888cdaa0ab019f75752112556f62e\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\@react-native-community\geolocation\android\build\.transforms\326888cdaa0ab019f75752112556f62e\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-community_geolocation:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\@react-native-community\geolocation\android\build\.transforms\1d115812f36b947d4dc281a7213a99b3\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\@react-native-community\geolocation\android\build\.transforms\326888cdaa0ab019f75752112556f62e\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -65,10 +65,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-android-location-services-dialog-box::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\f4fafab720d184a6ce23c01116dd0f83\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\f4fafab720d184a6ce23c01116dd0f83\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-android-location-services-dialog-box::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\708f03fe97e572f7a26f706f7b06003d\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\708f03fe97e572f7a26f706f7b06003d\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-android-location-services-dialog-box:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\f4fafab720d184a6ce23c01116dd0f83\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-services-dialog-box\android\build\.transforms\708f03fe97e572f7a26f706f7b06003d\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -78,10 +78,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-device-info::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\react-native-device-info\android\build\.transforms\c9223904da75f74a4a493191e1e74be9\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\react-native-device-info\android\build\.transforms\c9223904da75f74a4a493191e1e74be9\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-device-info::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-device-info\android\build\.transforms\7caea9c38dc3cf43e95cdf48a02fb045\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-device-info\android\build\.transforms\7caea9c38dc3cf43e95cdf48a02fb045\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-device-info:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\react-native-device-info\android\build\.transforms\c9223904da75f74a4a493191e1e74be9\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-device-info\android\build\.transforms\7caea9c38dc3cf43e95cdf48a02fb045\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -91,10 +91,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-geolocation-service::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\react-native-geolocation-service\android\build\.transforms\f2b1958da818b2797e376067534e6b8d\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\react-native-geolocation-service\android\build\.transforms\f2b1958da818b2797e376067534e6b8d\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-geolocation-service::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-geolocation-service\android\build\.transforms\0278b5c414f463c818b77e1d3ed38e5e\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-geolocation-service\android\build\.transforms\0278b5c414f463c818b77e1d3ed38e5e\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-geolocation-service:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\react-native-geolocation-service\android\build\.transforms\f2b1958da818b2797e376067534e6b8d\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-geolocation-service\android\build\.transforms\0278b5c414f463c818b77e1d3ed38e5e\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -104,10 +104,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-gesture-handler::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\react-native-gesture-handler\android\build\.transforms\a45e97ee0bd857ef8fd5b41b22a82a65\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\react-native-gesture-handler\android\build\.transforms\a45e97ee0bd857ef8fd5b41b22a82a65\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-gesture-handler::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-gesture-handler\android\build\.transforms\ac358ace8e76950f43fe6f5793158ce0\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-gesture-handler\android\build\.transforms\ac358ace8e76950f43fe6f5793158ce0\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-gesture-handler:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\react-native-gesture-handler\android\build\.transforms\a45e97ee0bd857ef8fd5b41b22a82a65\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-gesture-handler\android\build\.transforms\ac358ace8e76950f43fe6f5793158ce0\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -117,10 +117,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-image-crop-picker::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\.transforms\d14f0edca3a06decf200219a1c5833f9\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\.transforms\d14f0edca3a06decf200219a1c5833f9\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-image-crop-picker::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\.transforms\f1ba2d10dcc39b09c88ab66c353b97b5\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\.transforms\f1ba2d10dcc39b09c88ab66c353b97b5\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-image-crop-picker:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\.transforms\d14f0edca3a06decf200219a1c5833f9\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\.transforms\f1ba2d10dcc39b09c88ab66c353b97b5\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -130,10 +130,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-reanimated::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\react-native-reanimated\android\build\.transforms\31e1c56af2103975d946b8d66439d6fb\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\react-native-reanimated\android\build\.transforms\31e1c56af2103975d946b8d66439d6fb\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-reanimated::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-reanimated\android\build\.transforms\9ae2aa671afdeaebc2d3a2d387b8f4b6\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-reanimated\android\build\.transforms\9ae2aa671afdeaebc2d3a2d387b8f4b6\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-reanimated:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\react-native-reanimated\android\build\.transforms\31e1c56af2103975d946b8d66439d6fb\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-reanimated\android\build\.transforms\9ae2aa671afdeaebc2d3a2d387b8f4b6\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -143,10 +143,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-safe-area-context::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\react-native-safe-area-context\android\build\.transforms\dd29e44a98ff4a58481292abf8f27b70\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\react-native-safe-area-context\android\build\.transforms\dd29e44a98ff4a58481292abf8f27b70\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-safe-area-context::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-safe-area-context\android\build\.transforms\2d03fd9af6dcce9bd4fec25207eb6597\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-safe-area-context\android\build\.transforms\2d03fd9af6dcce9bd4fec25207eb6597\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-safe-area-context:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\react-native-safe-area-context\android\build\.transforms\dd29e44a98ff4a58481292abf8f27b70\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-safe-area-context\android\build\.transforms\2d03fd9af6dcce9bd4fec25207eb6597\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -156,10 +156,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-screens::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\react-native-screens\android\build\.transforms\44c4c0c4bc6befbd3029f5ae07edde83\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\react-native-screens\android\build\.transforms\44c4c0c4bc6befbd3029f5ae07edde83\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-screens::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-screens\android\build\.transforms\4531154d2d08bce53bbc216074ce94d9\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-screens\android\build\.transforms\4531154d2d08bce53bbc216074ce94d9\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-screens:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\react-native-screens\android\build\.transforms\44c4c0c4bc6befbd3029f5ae07edde83\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-screens\android\build\.transforms\4531154d2d08bce53bbc216074ce94d9\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -169,10 +169,10 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="F:\Ecube\tabishCorporation\android@@:react-native-vector-icons::release"
-      jars="F:\Ecube\tabishCorporation\node_modules\react-native-vector-icons\android\build\.transforms\6a66c35c7be91ba2cc583bfd0348cdf0\transformed\out\jars\classes.jar;F:\Ecube\tabishCorporation\node_modules\react-native-vector-icons\android\build\.transforms\6a66c35c7be91ba2cc583bfd0348cdf0\transformed\out\jars\libs\R.jar"
+      name="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android@@:react-native-vector-icons::release"
+      jars="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-vector-icons\android\build\.transforms\1f3062cdd0b4747c21aecdebe57f37ec\transformed\out\jars\classes.jar;C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-vector-icons\android\build\.transforms\1f3062cdd0b4747c21aecdebe57f37ec\transformed\out\jars\libs\R.jar"
       resolved="tabishCorporation:react-native-vector-icons:unspecified"
-      folder="F:\Ecube\tabishCorporation\node_modules\react-native-vector-icons\android\build\.transforms\6a66c35c7be91ba2cc583bfd0348cdf0\transformed\out"
+      folder="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-vector-icons\android\build\.transforms\1f3062cdd0b4747c21aecdebe57f37ec\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

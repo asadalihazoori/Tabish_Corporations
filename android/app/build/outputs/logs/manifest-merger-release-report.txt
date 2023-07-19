@@ -1,23 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:1-33:12
-MERGED from [:react-native-community_geolocation] F:\Ecube\tabishCorporation\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-android-location-enabler] F:\Ecube\tabishCorporation\node_modules\react-native-android-location-enabler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-device-info] F:\Ecube\tabishCorporation\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-geolocation-service] F:\Ecube\tabishCorporation\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-gesture-handler] F:\Ecube\tabishCorporation\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-33:12
-MERGED from [:react-native-reanimated] F:\Ecube\tabishCorporation\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-safe-area-context] F:\Ecube\tabishCorporation\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-screens] F:\Ecube\tabishCorporation\node_modules\react-native-screens\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-vector-icons] F:\Ecube\tabishCorporation\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from [:react-native-community_geolocation] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-android-location-enabler] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-enabler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-device-info] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-geolocation-service] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-gesture-handler] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-33:12
+MERGED from [:react-native-reanimated] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-safe-area-context] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-screens\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-vector-icons] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.react:react-android:0.71.6] C:\Users\Hazoori\.gradle\caches\transforms-3\7315d445ad2740a0aaaaecf1eb84f546\transformed\jetified-react-android-0.71.6-release\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\Hazoori\.gradle\caches\transforms-3\07d090cae19bc906d0866f7f6360e513\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.react:hermes-android:0.71.6] C:\Users\Hazoori\.gradle\caches\transforms-3\dda4114710af9b63f1b5899b0f5263db\transformed\jetified-hermes-android-0.71.6-release\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-android-location-services-dialog-box] F:\Ecube\tabishCorporation\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-12:12
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:2:1-12:12
 MERGED from [com.github.yalantis:ucrop:2.2.6-native] C:\Users\Hazoori\.gradle\caches\transforms-3\3f950f02d0c2bb52db14bef1e688dbfa\transformed\jetified-ucrop-2.2.6-native\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Hazoori\.gradle\caches\transforms-3\4af7f0d23266db3f5bdb15fc939a61bd\transformed\material-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\Hazoori\.gradle\caches\transforms-3\be9a285d7d94d789380b4b7ef5365ae2\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
@@ -83,67 +83,67 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Hazoori\.gradle\caches\transfo
 MERGED from [com.android.installreferrer:installreferrer:1.1.2] C:\Users\Hazoori\.gradle\caches\transforms-3\77498e0166932904294411b98df9c2b7\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:2.5.0] C:\Users\Hazoori\.gradle\caches\transforms-3\39ca84f5bc8ddf23b730cbfe84d0f991\transformed\jetified-fbcore-2.5.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Hazoori\.gradle\caches\transforms-3\e0a1603de116f315cea80cdc8604a239\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:1-33:12
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:1-33:12
 	package
-		INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:1-33:12
-		INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:1-33:12
-		INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:1-33:12
-		INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:1-33:12
+		INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:3:5-67
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:3:5-67
 MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\Hazoori\.gradle\caches\transforms-3\867f761e584dda73cba59b19016e0d10\transformed\jetified-play-services-iid-17.0.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\Hazoori\.gradle\caches\transforms-3\867f761e584dda73cba59b19016e0d10\transformed\jetified-play-services-iid-17.0.0\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:3:22-64
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:3:22-64
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:4:5-75
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:4:5-75
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:4:22-73
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:4:22-73
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:5:5-80
-MERGED from [:react-native-android-location-services-dialog-box] F:\Ecube\tabishCorporation\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-81
-MERGED from [:react-native-android-location-services-dialog-box] F:\Ecube\tabishCorporation\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-81
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:5:5-80
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-81
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:5:22-78
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:5:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:6:5-79
-MERGED from [:react-native-android-location-services-dialog-box] F:\Ecube\tabishCorporation\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-79
-MERGED from [:react-native-android-location-services-dialog-box] F:\Ecube\tabishCorporation\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-79
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-79
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:6:22-76
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.CAMERA
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:7:5-64
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:7:5-64
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:7:22-62
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:7:22-62
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:8:5-80
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:8:22-77
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:8:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:9:5-81
-MERGED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:5-81
-MERGED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:5-81
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:9:5-81
+MERGED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:5-81
+MERGED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:5-81
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:9:22-78
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:9:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:10:5-79
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:10:22-76
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:12:5-32:19
-MERGED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:5-31:19
-MERGED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:5-31:19
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:12:5-32:19
+MERGED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:5-31:19
+MERGED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:5-31:19
 MERGED from [com.facebook.react:react-android:0.71.6] C:\Users\Hazoori\.gradle\caches\transforms-3\7315d445ad2740a0aaaaecf1eb84f546\transformed\jetified-react-android-0.71.6-release\AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.react:react-android:0.71.6] C:\Users\Hazoori\.gradle\caches\transforms-3\7315d445ad2740a0aaaaecf1eb84f546\transformed\jetified-react-android-0.71.6-release\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Hazoori\.gradle\caches\transforms-3\4af7f0d23266db3f5bdb15fc939a61bd\transformed\material-1.1.0\AndroidManifest.xml:22:5-20
@@ -177,75 +177,75 @@ MERGED from [com.android.installreferrer:installreferrer:1.1.2] C:\Users\Hazoori
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\Hazoori\.gradle\caches\transforms-3\08e1174eef2c209ea18090f1084adbcb\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:15:7-39
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:15:7-39
 	android:roundIcon
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:17:7-52
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:17:7-52
 	android:icon
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:16:7-41
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:16:7-41
 	android:allowBackup
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:18:7-34
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:18:7-34
 	android:theme
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:19:7-38
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:19:7-38
 	android:usesCleartextTraffic
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:13:5-40
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:13:5-40
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:14:7-38
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:14:7-38
 activity#com.tabishcorporation.MainActivity
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:20:7-31:18
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:20:7-31:18
 	android:label
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:22:9-41
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:22:9-41
 	android:launchMode
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:24:9-40
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:24:9-40
 	android:windowSoftInputMode
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:25:9-51
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:25:9-51
 	android:exported
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:26:9-32
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:26:9-32
 	android:configChanges
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:23:9-118
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:23:9-118
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:21:9-37
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:21:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:27:9-30:25
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:27:9-30:25
 action#android.intent.action.MAIN
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:28:13-65
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:28:13-65
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:28:21-62
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:28:21-62
 category#android.intent.category.LAUNCHER
-ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:29:13-73
+ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:29:13-73
 	android:name
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml:29:23-70
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:29:23-70
 uses-sdk
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
-MERGED from [:react-native-community_geolocation] F:\Ecube\tabishCorporation\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_geolocation] F:\Ecube\tabishCorporation\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-android-location-enabler] F:\Ecube\tabishCorporation\node_modules\react-native-android-location-enabler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-android-location-enabler] F:\Ecube\tabishCorporation\node_modules\react-native-android-location-enabler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-device-info] F:\Ecube\tabishCorporation\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-device-info] F:\Ecube\tabishCorporation\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-geolocation-service] F:\Ecube\tabishCorporation\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-geolocation-service] F:\Ecube\tabishCorporation\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-gesture-handler] F:\Ecube\tabishCorporation\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-gesture-handler] F:\Ecube\tabishCorporation\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-reanimated] F:\Ecube\tabishCorporation\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-reanimated] F:\Ecube\tabishCorporation\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] F:\Ecube\tabishCorporation\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] F:\Ecube\tabishCorporation\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] F:\Ecube\tabishCorporation\node_modules\react-native-screens\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] F:\Ecube\tabishCorporation\node_modules\react-native-screens\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-vector-icons] F:\Ecube\tabishCorporation\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-vector-icons] F:\Ecube\tabishCorporation\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
+MERGED from [:react-native-community_geolocation] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_geolocation] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\@react-native-community\geolocation\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-android-location-enabler] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-enabler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-android-location-enabler] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-enabler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-device-info] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-device-info] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-device-info\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-geolocation-service] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-geolocation-service] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-geolocation-service\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-gesture-handler] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-reanimated] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-reanimated\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-screens\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-screens\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-vector-icons] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-vector-icons\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-android:0.71.6] C:\Users\Hazoori\.gradle\caches\transforms-3\7315d445ad2740a0aaaaecf1eb84f546\transformed\jetified-react-android-0.71.6-release\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:react-android:0.71.6] C:\Users\Hazoori\.gradle\caches\transforms-3\7315d445ad2740a0aaaaecf1eb84f546\transformed\jetified-react-android-0.71.6-release\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\Hazoori\.gradle\caches\transforms-3\07d090cae19bc906d0866f7f6360e513\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] C:\Users\Hazoori\.gradle\caches\transforms-3\07d090cae19bc906d0866f7f6360e513\transformed\swiperefreshlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.facebook.react:hermes-android:0.71.6] C:\Users\Hazoori\.gradle\caches\transforms-3\dda4114710af9b63f1b5899b0f5263db\transformed\jetified-hermes-android-0.71.6-release\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.react:hermes-android:0.71.6] C:\Users\Hazoori\.gradle\caches\transforms-3\dda4114710af9b63f1b5899b0f5263db\transformed\jetified-hermes-android-0.71.6-release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-android-location-services-dialog-box] F:\Ecube\tabishCorporation\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-android-location-services-dialog-box] F:\Ecube\tabishCorporation\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-android-location-services-dialog-box] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-android-location-services-dialog-box\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.yalantis:ucrop:2.2.6-native] C:\Users\Hazoori\.gradle\caches\transforms-3\3f950f02d0c2bb52db14bef1e688dbfa\transformed\jetified-ucrop-2.2.6-native\AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.yalantis:ucrop:2.2.6-native] C:\Users\Hazoori\.gradle\caches\transforms-3\3f950f02d0c2bb52db14bef1e688dbfa\transformed\jetified-ucrop-2.2.6-native\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.material:material:1.1.0] C:\Users\Hazoori\.gradle\caches\transforms-3\4af7f0d23266db3f5bdb15fc939a61bd\transformed\material-1.1.0\AndroidManifest.xml:20:5-44
@@ -376,46 +376,46 @@ MERGED from [com.facebook.fresco:fbcore:2.5.0] C:\Users\Hazoori\.gradle\caches\t
 MERGED from [com.facebook.fresco:fbcore:2.5.0] C:\Users\Hazoori\.gradle\caches\transforms-3\39ca84f5bc8ddf23b730cbfe84d0f991\transformed\jetified-fbcore-2.5.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Hazoori\.gradle\caches\transforms-3\e0a1603de116f315cea80cdc8604a239\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Hazoori\.gradle\caches\transforms-3\e0a1603de116f315cea80cdc8604a239\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
-INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
-		ADDED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Ecube\tabishCorporation\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml
 queries
-ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-13:15
+ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-13:15
 intent#action:name:android.media.action.IMAGE_CAPTURE
-ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-12:18
+ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-12:18
 action#android.media.action.IMAGE_CAPTURE
-ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-73
+ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-73
 	android:name
-		ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:21-70
+		ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:21-70
 provider#com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider
-ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-26:20
+ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-26:20
 	android:grantUriPermissions
-		ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-47
+		ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-47
 	android:authorities
-		ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-60
+		ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-60
 	android:exported
-		ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-37
+		ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-94
+		ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-94
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:78
+ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:78
 	android:resource
-		ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:17-75
+		ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:17-75
 	android:name
-		ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-67
+		ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-67
 activity#com.yalantis.ucrop.UCropActivity
-ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-30:72
+ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-30:72
 	android:theme
-		ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-69
+		ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-69
 	android:name
-		ADDED from [:react-native-image-crop-picker] F:\Ecube\tabishCorporation\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-60
+		ADDED from [:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-60
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.android.gms:play-services-iid:17.0.0] C:\Users\Hazoori\.gradle\caches\transforms-3\867f761e584dda73cba59b19016e0d10\transformed\jetified-play-services-iid-17.0.0\AndroidManifest.xml:23:5-82
 	android:name

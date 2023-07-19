@@ -1,7 +1,7 @@
-#Tue Jul 11 18:35:17 PKT 2023
-base.1=F\:\\Ecube\\tabishCorporation\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
+#Wed Jul 19 14:11:36 PKT 2023
+base.1=C\:\\Users\\Hazoori\\Documents\\GitHub\\Tabish_Corporations\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
 path.1=classes2.dex
-base.0=F\:\\Ecube\\tabishCorporation\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+base.0=C\:\\Users\\Hazoori\\Documents\\GitHub\\Tabish_Corporations\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex
