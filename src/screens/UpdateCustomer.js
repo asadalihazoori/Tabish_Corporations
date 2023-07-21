@@ -31,11 +31,11 @@ export default function UpdateCustomer({ route }) {
         image3: null
     });
 
-    //   const [selectedImages, setselectedImages] = React.useState({
-    //     image1: 'transparent',
-    //     image2: 'transparent',
-    //     image3: 'transparent'
-    //   });
+    const [selectedImages, setselectedImages] = useState({
+        image1: 'transparent',
+        image2: 'transparent',
+        image3: 'transparent'
+    });
 
     const [alertBox, setAlertBox] = useState({
         showBox: false,
@@ -47,13 +47,6 @@ export default function UpdateCustomer({ route }) {
 
     const [errors, setErrors] = React.useState({});
     const [loading, setLoading] = React.useState(false);
-
-    const [image1, setImage1] = useState(null);
-    const [image2, setImage2] = useState(null);
-    const [image3, setImage3] = useState(null);
-    const [selectedImages, setSelectedImages] = React.useState([]);
-
-
 
     useEffect(() => {
         setInputs({
@@ -68,32 +61,25 @@ export default function UpdateCustomer({ route }) {
             longitude: customer.store_longitude
         });
         if (customer.images[0] != false) {
-            // setImage1(`data:image/png;base64,${customer.images[0]}`);
-
             setImages(prevState => ({ ...prevState, ['image1']: `data:image/png;base64,${customer.images[0]}` }));
-            setSelectedImages(prevState => [...prevState, 1]);
         } else {
-            // setImage1(null);
             setImages(prevState => ({ ...prevState, ['image1']: null }));
         }
         if (customer.images[1] != false) {
-            // setImage2(`data:image/png;base64,${customer.images[1]}`);
 
             setImages(prevState => ({ ...prevState, ['image2']: `data:image/png;base64,${customer.images[1]}` }));
-            setSelectedImages(prevState => [...prevState, 2]);
         } else {
-            // setImage2(null);
             setImages(prevState => ({ ...prevState, ['image2']: null }));
         }
         if (customer.images[2] != false) {
-            // setImage3(`data:image/png;base64,${customer.images[2]}`);
 
             setImages(prevState => ({ ...prevState, ['image3']: `data:image/png;base64,${customer.images[2]}` }));
-            setSelectedImages(prevState => [...prevState, 3]);
         } else {
-            // setImage3(null);
             setImages(prevState => ({ ...prevState, ['image3']: null }));
         }
+
+        setErrors({});
+        setselectedImages({ image1: 'transparent', image2: 'transparent', image3: 'transparent' })
 
     }, [route]);
 
@@ -122,44 +108,38 @@ export default function UpdateCustomer({ route }) {
             handleError('Please input address', 'address');
             isValid = false;
         }
-        if (selectedImages.length < 3) {
-            console.log('Please select all images');
-            isValid = false;
 
-            return;
+        if (inputs.base64Img1 == false) {
+            setselectedImages(prevState => ({ ...prevState, ["image1"]: COLORS.red }))
+            isValid = false;
+        }
+        if (inputs.base64Img2 == false) {
+            setselectedImages(prevState => ({ ...prevState, ["image2"]: COLORS.red }))
+            isValid = false;
+        }
+        if (inputs.base64Img3 == false) {
+            setselectedImages(prevState => ({ ...prevState, ["image3"]: COLORS.red }))
+            isValid = false;
         }
 
-        // if (!inputs.base64Img1) {
-        //     setselectedImages(prevState => ({ ...prevState, ["image1"]: COLORS.red }))
-        //     isValid = false;
-        //   }
-        //   if (!inputs.base64Img2) {
-        //     setselectedImages(prevState => ({ ...prevState, ["image2"]: COLORS.red }))
-        //     isValid = false;
-        //   }
-        //   if (!inputs.base64Img3) {
-        //     setselectedImages(prevState => ({ ...prevState, ["image3"]: COLORS.red }))
-        //     isValid = false;
-        //   }
-
         if (isValid) {
-            addCustomer();
+            updateCustomer();
         }
     };
 
 
-    function addCustomer() {
+    function updateCustomer() {
         if (inputs.base64Img1 != null && inputs.base64Img2 != null, inputs.base64Img3 != null) {
 
             setLoading(true);
             CustomerAPI.UpdateCustomer(inputs)
                 .then((result) => {
                     console.log(result)
-                    // if (result.id != null) {
+                    if (result.id = null) {
 
-                    //     handleAlert("Confirmation", "Customer Updated Successfully.", "clipboard-check-outline", false)
-                    // }
-                    setLoading(false);
+                        handleAlert("Confirmation", "Customer Updated Successfully.", "clipboard-check-outline", false)
+                        setLoading(false);
+                    }
                 })
                 .catch(error => {
                     handleAlert("Internet Required", "Network request failed", "wifi-off", false)
@@ -177,10 +157,7 @@ export default function UpdateCustomer({ route }) {
     const onConfirmAlert = () => {
         setAlertBox(prevState => ({ ...prevState, ["confirmBtn"]: true }));
         setAlertBox(prevState => ({ ...prevState, ["showBox"]: false }));
-
-
     };
-
 
     const takePhoto = (no) => {
         ImagePicker.openCamera({
@@ -190,22 +167,16 @@ export default function UpdateCustomer({ route }) {
             includeBase64: true
         }).then(image => {
             if (no == 1) {
-                // setImage1(image.path);
                 setImages(prevState => ({ ...prevState, ['image1']: image.path }));
                 setInputs(prevState => ({ ...prevState, ['base64Img1']: image.data }));
-                // setSelectedImages(prevState => [...prevState, no]);
             }
             else if (no == 2) {
-                // setImage2(image.path);
                 setImages(prevState => ({ ...prevState, ['image2']: image.path }));
                 setInputs(prevState => ({ ...prevState, ['base64Img2']: image.data }));
-                // setSelectedImages(prevState => [...prevState, no]);
             }
             else if (no == 3) {
-                // setImage3(image.path);
                 setImages(prevState => ({ ...prevState, ['image3']: image.path }));
                 setInputs(prevState => ({ ...prevState, ['base64Img3']: image.data }));
-                // setSelectedImages(prevState => [...prevState, no]);
             }
         }).catch(error => {
             handleAlert("Warning", "You Cancelled Image Selection", "image-off", false)
@@ -288,28 +259,28 @@ export default function UpdateCustomer({ route }) {
                         onPress={() => takePhoto(1)}
                         style={[
                             styles.imagebox,
-                            { borderColor: selectedImages.includes(1) ? 'transparent' : COLORS.red }
+                            { borderColor: selectedImages.image1 }
                         ]}>
-                        {image1 ? (
-                            <Image source={{ uri: image1 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
+                        {images.image1 ? (
+                            <Image source={{ uri: images.image1 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
                         ) : (
                             <Image source={require('../assets/store-icon1.png')} style={{ width: 60, height: 60, borderRadius: 0 }} />
                         )}
                     </TouchableOpacity>
                     <TouchableOpacity
                         onPress={() => takePhoto(2)}
-                        style={[styles.imagebox, { marginLeft: 14, borderColor: selectedImages.includes(2) ? 'transparent' : COLORS.red, }]}>
-                        {image2 ? (
-                            <Image source={{ uri: image2 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
+                        style={[styles.imagebox, { marginLeft: 14, borderColor: selectedImages.image2 }]}>
+                        {images.image2 ? (
+                            <Image source={{ uri: images.image2 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
                         ) : (
                             <Image source={require('../assets/store-icon1.png')} style={{ width: 60, height: 60, borderRadius: 0 }} />
                         )}
                     </TouchableOpacity>
                     <TouchableOpacity
                         onPress={() => takePhoto(3)}
-                        style={[styles.imagebox, { marginLeft: 14, borderColor: selectedImages.includes(3) ? 'transparent' : COLORS.red, }]}>
-                        {image3 ? (
-                            <Image source={{ uri: image3 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
+                        style={[styles.imagebox, { marginLeft: 14, borderColor: selectedImages.image3 }]}>
+                        {images.image3 ? (
+                            <Image source={{ uri: images.image3 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
                         ) : (
                             <Image source={require('../assets/store-icon1.png')} style={{ width: 60, height: 60, borderRadius: 0 }} />
 
