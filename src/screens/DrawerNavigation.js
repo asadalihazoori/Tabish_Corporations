@@ -18,6 +18,7 @@ import Loans from './Loans';
 import AddCustomer from './AddCustomer';
 import CustomerList from './CustomerList';
 import UpdateCustomer from './UpdateCustomer';
+import Products from './Products';
 
 const ODrawer = createDrawerNavigator();
 
@@ -134,7 +135,18 @@ export default function DrawerNavigation() {
                   props.navigation.navigate('Customers List');
                 }}
               />
+              <DrawerItem
+                icon={({ color, size }) => (
+                  // <Image source={require('../assets/icons/customer.png')} style={{height: size, width: size, tintColor: COLORS.blue}} />
+                  <Icon name="atom" color={color} size={size} style={{ color: COLORS.blue }} />
+                )}
+                label={() => <Text style={{ color: COLORS.black }}>Products</Text>}
+                onPress={() => {
+                  props.navigation.navigate('Products');
+                }}
+              />
             </Drawer.Section>
+            
           </View>
         </DrawerContentScrollView>
         <Drawer.Section style={styles.bottomDrawerSection}>
@@ -169,6 +181,7 @@ export default function DrawerNavigation() {
       <ODrawer.Screen name="Add Customer" component={AddCustomer} />
       <ODrawer.Screen name="Customers List" component={CustomerList} />
       <ODrawer.Screen name="Update Customers" component={UpdateCustomer} />
+      <ODrawer.Screen name="Products" component={Products} />
     </ODrawer.Navigator>
   );
 }

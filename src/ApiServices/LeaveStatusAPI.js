@@ -14,7 +14,8 @@ export default class LeaveStatusAPI extends Component {
         "args": [
           [
             [
-              "annual_leaves_tree.emp_code", "=", sessionDetail.Id
+              // "annual_leaves_tree.emp_code", "=", sessionDetail.Id
+              "annual_leaves_tree.employee_id.id", "=", sessionDetail.Id
             ]
           ]
         ],
@@ -36,6 +37,7 @@ export default class LeaveStatusAPI extends Component {
     return fetch(`http://${sessionDetail.server_Ip}/web/dataset/call_kw/`, requestOptions)
       .then(response => response.json())
       .then(result => {
+        console.log(result);
         return result;
       })
       .catch(error => alert('Network Error', error));
