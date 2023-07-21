@@ -10,7 +10,6 @@ import OpenCage from '../ApiServices/OpenCage';
 import CustomerAPI from '../ApiServices/CustomerAPI';
 import LoginRMS from '../ApiServices/LoginRMS';
 import CustomAlert from '../components/CustomAlert';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default function AddCustomer({ navigation }) {
   const [inputs, setInputs] = React.useState({
@@ -24,12 +23,17 @@ export default function AddCustomer({ navigation }) {
     longitude: null
   });
 
-  const [errors, setErrors] = React.useState({});
-  const [loading, setLoading] = React.useState(false);
-  const [image1, setImage1] = useState(null);
-  const [image2, setImage2] = useState(null);
-  const [image3, setImage3] = useState(null);
-  const [selectedImages, setSelectedImages] = React.useState([]);
+  const [images, setImages] = useState({
+    image1: null,
+    image2: null,
+    image3: null
+  });
+
+  const [selectedImages, setselectedImages] = React.useState({
+    image1: 'transparent',
+    image2: 'transparent',
+    image3: 'transparent'
+  });
 
   const [alertBox, setAlertBox] = useState({
     showBox: false,
@@ -38,14 +42,9 @@ export default function AddCustomer({ navigation }) {
     icon: null,
     confirmBtn: false
   });
-  const onCloseAlert = () => {
-    setAlertBox(prevState => ({ ...prevState, ["showBox"]: false }));
-  };
 
-
-  // useEffect(() => {
-  //   getAttributes();
-  // }, [])
+  const [errors, setErrors] = React.useState({});
+  const [loading, setLoading] = React.useState(false);
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
@@ -60,10 +59,9 @@ export default function AddCustomer({ navigation }) {
         latitude: null,
         longitude: null,
       });
-      setImage1(null);
-      setImage2(null);
-      setImage3(null);
-      setSelectedImages([]);
+
+      setImages({ image1: null, image2: null, image3: null });
+      setselectedImages({ image1: "transparent", image2: 'transparent', image3: 'transparent' })
     });
 
     return unsubscribe;
@@ -73,6 +71,10 @@ export default function AddCustomer({ navigation }) {
 
   const handleAlert = (title, message, icon, confirmBtn) => {
     setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: title, ["message"]: message, ["icon"]: icon, ["confirmBtn"]: confirmBtn }));
+  };
+
+  const onCloseAlert = () => {
+    setAlertBox(prevState => ({ ...prevState, ["showBox"]: false }));
   };
 
   const validate = () => {
@@ -92,17 +94,22 @@ export default function AddCustomer({ navigation }) {
       handleError('Please input address', 'address');
       isValid = false;
     }
-    if (selectedImages.length < 3) {
-      console.log('Please select all images');
-      isValid = false;
 
-      return;
+    if (!inputs.base64Img1) {
+      setselectedImages(prevState => ({ ...prevState, ["image1"]: COLORS.red }))
+      isValid = false;
+    }
+    if (!inputs.base64Img2) {
+      setselectedImages(prevState => ({ ...prevState, ["image2"]: COLORS.red }))
+      isValid = false;
+    }
+    if (!inputs.base64Img3) {
+      setselectedImages(prevState => ({ ...prevState, ["image3"]: COLORS.red }))
+      isValid = false;
     }
 
     if (isValid) {
       addCustomer();
-      console.log("ok")
-
     }
   };
 
@@ -148,19 +155,17 @@ export default function AddCustomer({ navigation }) {
       includeBase64: true
     }).then(image => {
       if (no == 1) {
-        setImage1(image.path);
+
+        setImages(prevState => ({ ...prevState, ['image1']: image.path }));
         setInputs(prevState => ({ ...prevState, ['base64Img1']: image.data }));
-        setSelectedImages(prevState => [...prevState, no]);
       }
       else if (no == 2) {
-        setImage2(image.path);
+        setImages(prevState => ({ ...prevState, ['image2']: image.path }));
         setInputs(prevState => ({ ...prevState, ['base64Img2']: image.data }));
-        setSelectedImages(prevState => [...prevState, no]);
       }
       else if (no == 3) {
-        setImage3(image.path);
+        setImages(prevState => ({ ...prevState, ['image3']: image.path }));
         setInputs(prevState => ({ ...prevState, ['base64Img3']: image.data }));
-        setSelectedImages(prevState => [...prevState, no]);
       }
     }).catch(error => {
       handleAlert("Warning", "You Cancelled Image Selection", "image-off", false)
@@ -242,34 +247,30 @@ export default function AddCustomer({ navigation }) {
             onPress={() => takePhoto(1)}
             style={[
               styles.imagebox,
-              { borderColor: selectedImages.includes(1) ? 'transparent' : COLORS.red }
+              { borderColor: selectedImages.image1 }
             ]}>
-            {image1 ? (
-              <Image source={{ uri: image1 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
+            {images.image1 ? (
+              <Image source={{ uri: images.image1 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
             ) : (
               <Image source={require('../assets/store-icon1.png')} style={{ width: 60, height: 60, borderRadius: 0 }} />
             )}
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => takePhoto(2)}
-            style={[styles.imagebox, { marginLeft: 14, borderColor: selectedImages.includes(2) ? 'transparent' : COLORS.red, }]}>
-            {image2 ? (
-              <Image source={{ uri: image2 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
+            style={[styles.imagebox, { marginLeft: 14, borderColor: selectedImages.image2, }]}>
+            {images.image2 ? (
+              <Image source={{ uri: images.image2 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
             ) : (
               <Image source={require('../assets/store-icon1.png')} style={{ width: 60, height: 60, borderRadius: 0 }} />
             )}
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => takePhoto(3)}
-            style={[styles.imagebox, { marginLeft: 14, borderColor: selectedImages.includes(3) ? 'transparent' : COLORS.red, }]}>
-            {image3 ? (
-              <Image source={{ uri: image3 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
+            style={[styles.imagebox, { marginLeft: 14, borderColor: selectedImages.image3 }]}>
+            {images.image3 ? (
+              <Image source={{ uri: images.image3 }} style={{ width: 100, height: 100, borderRadius: 0 }} />
             ) : (
               <Image source={require('../assets/store-icon1.png')} style={{ width: 60, height: 60, borderRadius: 0 }} />
-              //   <Icon
-              //   name='office-building'
-              //   style={{  fontSize:70, color: COLORS.blue, }}
-              // />
             )}
           </TouchableOpacity>
         </View>
