@@ -130,7 +130,7 @@ export default function DrawerNavigation() {
                   // <Image source={require('../assets/icons/customer.png')} style={{height: size, width: size, tintColor: COLORS.blue}} />
                   <Icon name="account-box-multiple-outline" color={color} size={size} style={{ color: COLORS.blue }} />
                 )}
-                label={() => <Text style={{ color: COLORS.black }}>Customers List</Text>}
+                label={() => <Text style={{ color: COLORS.black }}>Customers List / Update</Text>}
                 onPress={() => {
                   props.navigation.navigate('Customers List');
                 }}
@@ -143,6 +143,16 @@ export default function DrawerNavigation() {
                 label={() => <Text style={{ color: COLORS.black }}>Products</Text>}
                 onPress={() => {
                   props.navigation.navigate('Products');
+                }}
+              />
+               <DrawerItem
+                icon={({ color, size }) => (
+                  // <Image source={require('../assets/icons/customer.png')} style={{height: size, width: size, tintColor: COLORS.blue}} />
+                  <Icon name="cart-outline" color={color} size={size} style={{ color: COLORS.blue }} />
+                )}
+                label={() => <Text style={{ color: COLORS.black }}>Orders</Text>}
+                onPress={() => {
+                  props.navigation.navigate('Customers List');
                 }}
               />
             </Drawer.Section>
