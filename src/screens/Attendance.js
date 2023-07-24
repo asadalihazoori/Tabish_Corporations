@@ -6,7 +6,7 @@ import ImagePicker from 'react-native-image-crop-picker';
 import Loader from '../components/Loader';
 import AccessLocation from '../ApiServices/AccessLocation';
 import OpenCage from '../ApiServices/OpenCage';
-import AttendanceAPI from '../ApiServices/AttendanceAPI';
+import AttendanceAPI from '../ApiServices/Tabish_Server/AttendanceAPI';
 import COLORS from '../conts/colors';
 import CustomAlert from '../components/CustomAlert';
 import CheckDistance from '../ApiServices/CheckDistance';

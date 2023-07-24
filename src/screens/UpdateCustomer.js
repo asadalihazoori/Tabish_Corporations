@@ -7,8 +7,8 @@ import CustomButton from '../components/Button';
 import ImagePicker from 'react-native-image-crop-picker';
 import AccessLocation from '../ApiServices/AccessLocation';
 import OpenCage from '../ApiServices/OpenCage';
-import CustomerAPI from '../ApiServices/CustomerAPI';
-import LoginRMS from '../ApiServices/LoginRMS';
+import CustomerAPI from '../ApiServices/RMS_Server/CustomerAPI';
+import LoginRMS from '../ApiServices/RMS_Server/LoginRMS';
 import CustomAlert from '../components/CustomAlert';
 
 export default function UpdateCustomer({ route }) {

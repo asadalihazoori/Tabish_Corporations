@@ -9,6 +9,7 @@ const CustomButton = ({ title, onPress = () => { } }) => {
       style={{
         height: 55,
         width: 330,
+        // width: 300,
         backgroundColor: COLORS.blue,
         marginVertical: 20,
         justifyContent: 'center',

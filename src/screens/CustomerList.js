@@ -128,16 +128,24 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import Loader from '../components/Loader';
 import COLORS from '../conts/colors';
-import CustomerAPI from '../ApiServices/CustomerAPI';
+import CustomerAPI from '../ApiServices/RMS_Server/CustomerAPI';
 import Search from '../components/Search';
 
 class CustomerItem extends PureComponent {
   render() {
-    const { item, navigation } = this.props;
+    const { item, navigation, screenName } = this.props;
 
     return (
       <TouchableOpacity style={styles.container}
-        onPress={() => navigation.navigate('Update Customers', { customer: item })}>
+        onPress={() => {
+          if (screenName == 'order') {
+
+            navigation.navigate('Products', { customer: item })
+          } else {
+
+            navigation.navigate('Update Customers', { customer: item })
+          }
+        }}>
         <Text style={styles.name}>{item.customer_name}</Text>
         {item.customer_address && (
           <View style={styles.infoRow}>
@@ -150,15 +158,17 @@ class CustomerItem extends PureComponent {
   }
 }
 
-export default function CustomerList({ navigation }) {
+export default function CustomerList({ navigation, route }) {
   const [loading, setLoading] = useState(true);
   const [customers, setCustomers] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredData, setFilteredData] = useState([]);
+  const screenName = route.params?.screenName;
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
       getProfile();
+      console.log(screenName);
     });
 
     return unsubscribe;
@@ -182,7 +192,7 @@ export default function CustomerList({ navigation }) {
     setFilteredData(filteredData);
   };
 
-  const renderCustomerItem = ({ item }) => <CustomerItem item={item} navigation={navigation} />;
+  const renderCustomerItem = ({ item }) => <CustomerItem item={item} navigation={navigation} screenName={screenName} />;
 
   return (
     <View style={{ width: '100%' }}>

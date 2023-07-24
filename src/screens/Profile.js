@@ -1,7 +1,7 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import Loader from '../components/Loader';
-import ProfileAPI from '../ApiServices/ProfileAPI';
+import ProfileAPI from '../ApiServices/Tabish_Server/ProfileAPI';
 import COLORS from '../conts/colors';
 
 export default function Profile() {

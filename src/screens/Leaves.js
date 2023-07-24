@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, FlatList } from 'react-native';
 import Loader from '../components/Loader';
 import COLORS from '../conts/colors';
 import { useIsFocused } from '@react-navigation/native';
-import LeaveStatusAPI from '../ApiServices/LeaveStatusAPI';
+import LeaveStatusAPI from '../ApiServices/Tabish_Server/LeaveStatusAPI';
 
 export default function Leaves({ navigation }) {
   console.log("ViewAttendance.js Called");
@@ -12,7 +12,7 @@ export default function Leaves({ navigation }) {
   const [attendanceData, setAttendanceData] = useState([]);
   const isFocused = useIsFocused();
 
-  const fetchAttendanceData = useCallback(() => { 
+  const fetchAttendanceData = useCallback(() => {
     LeaveStatusAPI.getLeaveStatus()
       .then((result) => {
         if (result) {

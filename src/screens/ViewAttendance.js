@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { StyleSheet, View, Text, FlatList } from 'react-native';
 import Loader from '../components/Loader';
 import COLORS from '../conts/colors';
-import AttendanceRecord from '../ApiServices/AttendenceRecord';
+import AttendanceRecord from '../ApiServices/Tabish_Server/AttendenceRecord';
 import { useIsFocused } from '@react-navigation/native';
 
 export default function ViewAttendance({ navigation }) {

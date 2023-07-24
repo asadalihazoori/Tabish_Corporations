@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { View, StyleSheet, Image } from 'react-native'
 import { createDrawerNavigator, DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
@@ -19,6 +18,7 @@ import AddCustomer from './AddCustomer';
 import CustomerList from './CustomerList';
 import UpdateCustomer from './UpdateCustomer';
 import Products from './Products';
+import Order from './Order';
 
 const ODrawer = createDrawerNavigator();
 
@@ -145,18 +145,18 @@ export default function DrawerNavigation() {
                   props.navigation.navigate('Products');
                 }}
               />
-               <DrawerItem
+              <DrawerItem
                 icon={({ color, size }) => (
                   // <Image source={require('../assets/icons/customer.png')} style={{height: size, width: size, tintColor: COLORS.blue}} />
                   <Icon name="cart-outline" color={color} size={size} style={{ color: COLORS.blue }} />
                 )}
                 label={() => <Text style={{ color: COLORS.black }}>Orders</Text>}
                 onPress={() => {
-                  props.navigation.navigate('Customers List');
+                  props.navigation.navigate('Customers List', { screenName: 'order' });
                 }}
               />
             </Drawer.Section>
-            
+
           </View>
         </DrawerContentScrollView>
         <Drawer.Section style={styles.bottomDrawerSection}>
@@ -192,6 +192,7 @@ export default function DrawerNavigation() {
       <ODrawer.Screen name="Customers List" component={CustomerList} />
       <ODrawer.Screen name="Update Customers" component={UpdateCustomer} />
       <ODrawer.Screen name="Products" component={Products} />
+      <ODrawer.Screen name="Order" component={Order} />
     </ODrawer.Navigator>
   );
 }

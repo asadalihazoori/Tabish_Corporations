@@ -4,21 +4,52 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import Loader from '../components/Loader';
 import COLORS from '../conts/colors';
 import Search from '../components/Search';
-import ProductsAPI from '../ApiServices/ProductsAPI';
+import ProductsAPI from '../ApiServices/RMS_Server/ProductsAPI';
+import CustomButton from '../components/Button';
 
-export default function Products({ navigation }) {
+export default function Products({ navigation, route }) {
   const [loading, setLoading] = useState(true);
   const [products, setProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredData, setFilteredData] = useState([]);
+  const customer = route.params?.customer;
+  // const [selectedProducts, setSelectedProducts] = useState(null);
+
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
       getProducts();
+
     });
 
     return unsubscribe;
   }, [navigation]);
+
+
+  const validate = () => {
+    // console.log(products);
+    const productsWithQuantityGreater = products.filter(
+      (product) => product.quantity > 0
+    );
+    // console.log(productsWithQuantityGreater)
+
+    const selected_products = [];
+    productsWithQuantityGreater.map((product) => {
+      const newProduct = {
+        product_id: product.product_id,
+        product_name: product.products_name,
+        price_unit: product.product_price,
+        qty: product.quantity,
+      };
+
+      selected_products.push(newProduct);
+    })
+    // setSelectedProducts(productsWithQuantityGreater);
+
+    // Now you have the selected products with quantity greater than one in the selectedProducts state
+    // console.log('Selected Products:', selectedProducts);
+    navigation.navigate("Order", { customer: customer, products: selected_products })
+  }
 
   const incrementCount = (productId) => {
     setProducts((prevProducts) =>
@@ -71,6 +102,7 @@ export default function Products({ navigation }) {
               color={COLORS.black}
             />
           </TouchableOpacity>
+
         </View>
       </View>
     </TouchableOpacity>
@@ -114,7 +146,15 @@ export default function Products({ navigation }) {
           keyExtractor={(item) => item.product_id.toString()}
           numColumns={2}
           contentContainerStyle={styles.flatListContentContainer}
+          initialNumToRender={7}
         />
+        { customer &&
+
+          <View style={styles.bottomview}>
+
+          <CustomButton title={"Place Order"} onPress={validate} />
+        </View>
+        }
       </View>
     </View>
   );
@@ -122,6 +162,7 @@ export default function Products({ navigation }) {
 
 const styles = StyleSheet.create({
   mainContainer: {
+    height: "97%",
     backgroundColor: '#FFFFFF',
     borderRadius: 10,
     marginTop: '4%',
@@ -135,6 +176,7 @@ const styles = StyleSheet.create({
     shadowRadius: 3.84,
     elevation: 5,
     marginHorizontal: 10,
+    
   },
   container: {
     width: '45%',
@@ -144,7 +186,7 @@ const styles = StyleSheet.create({
     marginTop: '5%',
     margin: '2.5%'
     // borderWidth: 1,
-    // borderColor: COLORS.blue
+    // borderColor: 'black'
   },
   name: {
     fontSize: 18,
@@ -195,4 +237,26 @@ const styles = StyleSheet.create({
     width: '50%',
     justifyContent: 'center',
   },
+  bottomview: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    paddingVertical: 16,
+    paddingHorizontal: 20,
+    backgroundColor: '#FFFFFF',
+    alignItems: 'center',
+    justifyContent: 'center'
+
+    // shadowColor: '#000',
+    // shadowOffset: {
+    //   width: 0,
+    //   height: -2,
+    // },
+    // shadowOpacity: 0.25,
+    // shadowRadius: 3.84,
+    // elevation: 5,
+    // borderTopLeftRadius: 10,
+    // borderTopRightRadius: 10,
+  }
 });

@@ -4,7 +4,7 @@ import COLORS from '../conts/colors';
 import CustomButton from '../components/Button';
 import Input from '../components/Input';
 import Loader from '../components/Loader';
-import LoginAPI from '../ApiServices/LoginAPI';
+import LoginAPI from '../ApiServices/Tabish_Server/LoginAPI';
 import ErrorBox from '../components/ErrorBox';
 
 export default function Login({ navigation, route }) {

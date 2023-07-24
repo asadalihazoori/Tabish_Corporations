@@ -1519,6 +1519,7 @@ drawable src_assets_icons_manager
 drawable src_assets_icons_telephone
 drawable src_assets_logo_avatar
 drawable src_assets_logo_tabish_logo
+drawable src_assets_product
 drawable src_assets_storeicon1
 drawable test_custom_background
 drawable test_level_drawable

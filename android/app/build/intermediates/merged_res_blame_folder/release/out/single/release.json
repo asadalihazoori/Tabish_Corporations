@@ -168,6 +168,10 @@
         "source": "com.tabishcorporation.app-react-28:/drawable-hdpi/node_modules_reactnativecalendars_src_img_up.png"
     },
     {
+        "merged": "com.tabishcorporation.app-merged_res-33:/drawable-mdpi_src_assets_product.png.flat",
+        "source": "com.tabishcorporation.app-react-28:/drawable-mdpi/src_assets_product.png"
+    },
+    {
         "merged": "com.tabishcorporation.app-merged_res-33:/drawable-mdpi_src_assets_icons_calendar.png.flat",
         "source": "com.tabishcorporation.app-react-28:/drawable-mdpi/src_assets_icons_calendar.png"
     },
