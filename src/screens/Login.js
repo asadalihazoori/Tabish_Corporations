@@ -7,7 +7,7 @@ import Loader from '../components/Loader';
 import LoginAPI from '../ApiServices/Tabish_Server/LoginAPI';
 import ErrorBox from '../components/ErrorBox';
 
-export default function Login({ navigation, route }) {
+export default function Login({ navigation, route, handleLoginSuccess }) {
     const [inputs, setInputs] = React.useState({
         username: null,
         password: null,
@@ -53,11 +53,12 @@ export default function Login({ navigation, route }) {
             }).then((response) => {
                 if (response == true) {
                     setLoading(false);
+                    handleLoginSuccess();
                     navigation.navigate("DrawerNavigation");
                 }
             })
             .catch(error => {
-                Alert(error);
+                Alert.alert('Error', error.message);
                 setLoading(false);
             });
     }
