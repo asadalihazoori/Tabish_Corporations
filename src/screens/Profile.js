@@ -60,11 +60,13 @@ export default function Profile() {
 
         <View style={styles.mainContainer}>
           <View style={styles.header}>
-            <Image source={{ uri: imageSource }} style={styles.profileImage} />
+            { imageSource &&<Image source={{ uri: imageSource }} style={styles.profileImage} />}
             <Text style={styles.name}>{name}</Text>
           </View>
 
-          <View style={[styles.container, { backgroundColor: "#de3745" }]}>
+          <View style={[styles.container,
+            // { backgroundColor: "#de3745" }
+          ]}>
             <Text style={styles.headerText}>Job Information</Text>
           </View>
           <View>
@@ -96,38 +98,44 @@ export default function Profile() {
             </View>
           )}
 
-          <TouchableOpacity style={styles.container} onPress={handlePress}>
-            <Text style={styles.headerText}>Personal Information</Text>
-          </TouchableOpacity>
 
-          {showInfo && (
-            <View>
-              {identification_id && (
-                <View style={styles.infoRow}>
-                  <Image source={require('../assets/icons/id-card.png')} style={styles.infoIcon} />
-                  <Text style={styles.infoText}>CNIC: {identification_id}</Text>
-                </View>
-              )}
-              {phone && (
-                <View style={styles.infoRow}>
-                  <Image source={require('../assets/icons/telephone.png')} style={styles.infoIcon} />
-                  <Text style={styles.infoText}>{phone}</Text>
-                </View>
-              )}
-              {first_email && (
-                <View style={styles.infoRow}>
-                  <Image source={require('../assets/icons/email.png')} style={styles.infoIcon} />
-                  <Text style={styles.infoText}>{first_email}</Text>
-                </View>
-              )}
-              {home_address && (
-                <View style={styles.infoRow}>
-                  <Image source={require('../assets/icons/location.png')} style={styles.infoIcon} />
-                  <Text style={styles.infoText}>{home_address}</Text>
-                </View>
-              )}
-            </View>
-          )}
+
+          {/* <TouchableOpacity style={styles.container} onPress={handlePress}>
+            <Text style={styles.headerText}>Personal Information</Text>
+          </TouchableOpacity> */}
+
+          <View style={[styles.container,]}>
+            <Text style={styles.headerText}>Personal Information</Text>
+          </View>
+
+          {/* {showInfo && ( */}
+          <View>
+            {identification_id && (
+              <View style={styles.infoRow}>
+                <Image source={require('../assets/icons/id-card.png')} style={styles.infoIcon} />
+                <Text style={styles.infoText}>CNIC: {identification_id}</Text>
+              </View>
+            )}
+            {phone && (
+              <View style={styles.infoRow}>
+                <Image source={require('../assets/icons/telephone.png')} style={styles.infoIcon} />
+                <Text style={styles.infoText}>{phone}</Text>
+              </View>
+            )}
+            {first_email && (
+              <View style={styles.infoRow}>
+                <Image source={require('../assets/icons/email.png')} style={styles.infoIcon} />
+                <Text style={styles.infoText}>{first_email}</Text>
+              </View>
+            )}
+            {home_address && (
+              <View style={styles.infoRow}>
+                <Image source={require('../assets/icons/location.png')} style={styles.infoIcon} />
+                <Text style={styles.infoText}>{home_address}</Text>
+              </View>
+            )}
+          </View>
+          {/* )} */}
 
         </View>
       </View>

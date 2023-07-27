@@ -31,36 +31,45 @@ export default function Login({ navigation, route, handleLoginSuccess }) {
 
         LoginAPI.LoginUser(inputs)
             .then(response => {
-                console.log("response", response);
-                if (response != undefined) {
-                    if (Number.isInteger(response)) {
-                        return true;
-                    }
-                    else if (response.message == "Cannot convert undefined value to object") {
-                        handleError('', 'username');
-                        setLoading(false);
-                        handleError('Incorrect username or password', 'password');
-                    }
-                    else if (response.message == "Network request failed") {
-                        setAlertBox(prevState => ({ ...prevState, ["showBox"]: true }));
-                        setAlertBox(prevState => ({ ...prevState, ["title"]: "Internet Required" }));
-                        setAlertBox(prevState => ({ ...prevState, ["message"]: "Network Request Failed" }));
-                        setLoading(false);
-                        return false;
-                    }
+                console.log("user_id", response);
+                if (Number.isInteger(response)) {
+                    LoginAPI.getEmployee(response)
+                        .then(employee => {
+                            console.log("employee", employee)
+                            if (Number.isInteger(employee)) {
+                                setLoading(false);
+                                handleLoginSuccess();
+                                navigation.navigate("DrawerNavigation");
+                            }
+                            else {
+                                setLoading(false);
+                                setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: "Employee not found", ["message"]: employee }));
+                            }
+                        })
+                        .catch((error) => {
+                            setLoading(false);
+                            console.log(error)
+                            setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: "Internet Required", ["message"]: error }));
+                        })
+
+                }
+                else if (response == false) {
+                    setLoading(false);
+                    handleError('', 'username');
+                    handleError('Incorrect username or password', 'password');
+                    return false;
                 }
 
-            }).then((response) => {
-                if (response == true) {
-                    setLoading(false);
-                    handleLoginSuccess();
-                    navigation.navigate("DrawerNavigation");
-                }
             })
-            .catch(error => {
-                Alert.alert('Error', error.message);
+            .catch((error) => {
                 setLoading(false);
-            });
+                setAlertBox(prevState => ({ ...prevState, ["showBox"]: true }));
+                setAlertBox(prevState => ({ ...prevState, ["title"]: "Internet Required" }));
+                setAlertBox(prevState => ({ ...prevState, ["message"]: error }));
+                // "Network Request Failed or Server is not Responding"
+            })
+
+
     }
 
     const validate = () => {
