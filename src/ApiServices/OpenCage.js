@@ -6,7 +6,6 @@ export default class OpenCage extends Component {
     static getLocation({ latitude, longitude }) {
         return axios.get(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${API_KEY}`)
             .then(response => {
-                // console.log(response.data);
                 const { results } = response.data;
                 if (results.length > 0) {
                     console.log(results[0].formatted);
@@ -14,7 +13,6 @@ export default class OpenCage extends Component {
                 }
             })
             .catch(error => {
-                // alert(error);
                 throw error;
             });
     }

@@ -1,34 +1,56 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Text, FlatList } from 'react-native';
 import Loader from '../components/Loader';
 import COLORS from '../conts/colors';
-import { useIsFocused } from '@react-navigation/native';
 import LeaveStatusAPI from '../ApiServices/Tabish_Server/LeaveStatusAPI';
+import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
+import CustomAlert from '../components/CustomAlert';
 
 export default function Leaves({ navigation }) {
-  console.log("ViewAttendance.js Called");
 
   const [loading, setLoading] = React.useState(true);
   const [attendanceData, setAttendanceData] = useState([]);
-  const isFocused = useIsFocused();
 
-  const fetchAttendanceData = useCallback(() => {
+  const [alertBox, setAlertBox] = useState({
+    showBox: false,
+    title: null,
+    message: null,
+    icon: null,
+    confirmBtn: false
+  });
+
+  const handleAlert = (title, message, icon, confirmBtn) => {
+    setAlertBox({ ["showBox"]: true, ["title"]: title, ["message"]: message, ["icon"]: icon, ["confirmBtn"]: confirmBtn });
+  };
+
+  const onCloseAlert = () => {
+    setAlertBox(prevState => ({ ...prevState, ["showBox"]: false }));
+  };
+
+  const fetchAttendanceData = () => {
     LeaveStatusAPI.getLeaveStatus()
       .then((result) => {
-        if (result) {
-          setAttendanceData(result.result)
-        }
-        else {
-          setLoading(false)
+        setLoading(false);
+        if (result.result) {
+          setAttendanceData(result.result);
         }
       }
       )
-      .then(() => setLoading(false));
-  }, []);
+      .catch(() => {
+        setLoading(false);
+        handleAlert("Internet Required", 'You are not connected to Network or Server Error.', "wifi-off", false);
+      })
+
+  }
 
   useEffect(() => {
-    fetchAttendanceData();
-  }, [fetchAttendanceData, isFocused]);
+    const unsubscribe = navigation.addListener('focus', () => {
+      fetchAttendanceData();
+    });
+
+    return unsubscribe;
+  }, [navigation]);
+
 
   const renderItem = ({ item }) => (
     <View style={styles.row}>
@@ -40,21 +62,28 @@ export default function Leaves({ navigation }) {
   );
 
   return (
-
-    <View style={styles.container}>
+    <>
       <Loader visible={loading} />
-      <View style={styles.row}>
-        <Text style={styles.header}>Type</Text>
-        <Text style={styles.header}>Allocated</Text>
-        <Text style={styles.header}>Availed</Text>
-        <Text style={styles.header}>Remaining</Text>
+      <View style={styles.container}>
+        <View style={styles.row}>
+          <Text style={styles.header}>Type</Text>
+          <Text style={styles.header}>Allocated</Text>
+          <Text style={styles.header}>Availed</Text>
+          <Text style={styles.header}>Remaining</Text>
+        </View>
+        {attendanceData.length > 0 ?
+          <FlatList
+            data={attendanceData}
+            renderItem={renderItem}
+            keyExtractor={(item) => item.id.toString()}
+          />
+          :
+          <View style={styles.nullContainer}>
+            <Text style={styles.text}>No Leaves Record Found !</Text>
+          </View>}
+        <CustomAlert visible={alertBox.showBox} onClose={onCloseAlert} title={alertBox.title} message={alertBox.message} icon={alertBox.icon} />
       </View>
-      <FlatList
-        data={attendanceData}
-        renderItem={renderItem}
-        keyExtractor={(item) => item.id.toString()}
-      />
-    </View>
+    </>
   )
 
 }
@@ -62,20 +91,18 @@ export default function Leaves({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginHorizontal: 10,
-    marginVertical: 10,
+    marginHorizontal: moderateScale(10),
+    marginVertical: verticalScale(10),
     backgroundColor: '#ffffff',
-    borderRadius: 10,
+    borderRadius: scale(10),
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
     },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
-    // borderWidth: 2,
-    // borderColor: "green"
+    shadowOpacity: scale(0.25),
+    shadowRadius: scale(3.84),
+    elevation: scale(5),
   },
 
   header: {
@@ -83,38 +110,47 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 12,
-    paddingVertical: 10,
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
+    paddingHorizontal: moderateScale(12),
+    paddingVertical: verticalScale(10),
+    borderTopLeftRadius: scale(10),
+    borderTopRightRadius: scale(10),
     color: "#FFFFFF",
-    // borderWidth: 2,
-    // borderColor: "blue"
-
   },
 
   headerText: {
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: scale(16),
   },
 
   row: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingHorizontal: 20,
-    paddingVertical: 15,
-    borderBottomWidth: 1,
+    paddingHorizontal: moderateScale(20),
+    paddingVertical: verticalScale(15),
+    borderBottomWidth: scale(1),
     borderBottomColor: '#DDDDDD',
 
   },
 
   cell: {
-    fontSize: 16,
-    width: 80,
+    fontSize: scale(14),
+    width: moderateScale(50),
     color: "#000000",
-    // borderColor: 'green',
-    // borderWidth: 2,
     marginLeft: 2
   },
+
+  nullContainer: {
+    marginTop: verticalScale(50),
+    alignContent: 'center',
+    textAlign: 'center',
+
+  },
+
+  text: {
+    fontSize: scale(16),
+    color: 'black',
+    fontWeight: 'bold',
+    alignSelf: 'center'
+  }
 });

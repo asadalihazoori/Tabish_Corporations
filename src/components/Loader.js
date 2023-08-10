@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { version } from 'react';
 import {
   useWindowDimensions,
   View,
@@ -7,6 +7,7 @@ import {
   StyleSheet,
 } from 'react-native';
 import COLORS from '../conts/colors';
+import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
 const Loader = ({ visible = false }) => {
   const { width, height } = useWindowDimensions();
   return (
@@ -14,7 +15,7 @@ const Loader = ({ visible = false }) => {
       <View style={[style.container, { height, width }]}>
         <View style={style.loader}>
           <ActivityIndicator size="large" color={COLORS.blue} />
-          <Text style={{ marginLeft: 10, fontSize: 16, color: COLORS.black }}>Loading...</Text>
+          <Text style={{ marginLeft: moderateScale(14), fontSize: scale(14), color: COLORS.black }}>Loading...</Text>
         </View>
       </View>
     )
@@ -23,17 +24,17 @@ const Loader = ({ visible = false }) => {
 
 const style = StyleSheet.create({
   loader: {
-    height: 70,
+    height: verticalScale(60),
     backgroundColor: COLORS.white,
-    marginHorizontal: 50,
-    borderRadius: 5,
+    marginHorizontal: moderateScale(50),
+    borderRadius: scale(5),
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 20,
+    paddingHorizontal: moderateScale(20),
   },
   container: {
     position: 'absolute',
-    zIndex: 10,
+    zIndex: scale(10),
     backgroundColor: 'rgba(0,0,0,0.5)',
     justifyContent: 'center',
   },

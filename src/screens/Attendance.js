@@ -11,8 +11,14 @@ import COLORS from '../conts/colors';
 import CustomAlert from '../components/CustomAlert';
 import CheckDistance from '../ApiServices/CheckDistance';
 import sessionDetail from '../conts/sessionDetail';
+import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 
 export default function Attendance({ navigation }) {
+  const [loading, setLoading] = React.useState(false);
+  const [attendance, submitAttendance] = useState(true);
+  const [image, setImage] = useState(null);
+  const [distance, setDistance] = useState(null);
+
   const [alertBox, setAlertBox] = useState({
     showBox: false,
     title: null,
@@ -20,12 +26,6 @@ export default function Attendance({ navigation }) {
     icon: null,
     confirmBtn: false
   });
-
-  const [loading, setLoading] = React.useState(false);
-  const [attendance, submitAttendance] = useState(true);
-  const [image, setImage] = useState(null);
-  const [distance, setDistance] = useState(null);
-  const [date, setDate] = useState(null);
 
   const [data, setData] = React.useState({
     latitude: null,
@@ -41,6 +41,28 @@ export default function Attendance({ navigation }) {
     department: sessionDetail.Department,
     date_time: null
   });
+
+  useEffect(() => {
+    getAttributes();
+  }, [])
+
+  useEffect(() => {
+    let intervalId;
+
+    if (attendance) {
+      intervalId =
+        setInterval(() => {
+          var hours = new Date().getHours();
+          var min = new Date().getMinutes();
+          var sec = new Date().getSeconds();
+          var time = `${hours}:${min}:${sec}`;
+          setData(prevState => ({ ...prevState, time }));
+        }, 1000);
+    }
+
+    return () => clearInterval(intervalId);
+
+  }, [attendance]);
 
   const handleAlert = (title, message, icon, confirmBtn) => {
     setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: title, ["message"]: message, ["icon"]: icon, ["confirmBtn"]: confirmBtn }));
@@ -62,10 +84,10 @@ export default function Attendance({ navigation }) {
 
   const takePhoto = () => {
     ImagePicker.openCamera({
-      width: 300,
-      height: 400,
+      width: 600,
+      height: 800,
       cropping: true,
-      includeBase64: true
+      includeBase64: true,
     }).then(image => {
       setImage(image.path);
       setData(prevState => ({ ...prevState, ['base64Img']: image.data }));
@@ -85,10 +107,9 @@ export default function Attendance({ navigation }) {
         const distance = CheckDistance({ latitude, longitude });
         setDistance(distance.toFixed(2));
         console.log("distance", distance);
-        // if (distance > 50) {
-        //   handleAlert("Out of Range", `You are ${distance} meters away from WareHouse`, "warehouse", false);
-
-        // }
+        if (distance > 50) {
+          handleAlert("Out of Range", `You are ${distance.toFixed(2)} meters away from WareHouse`, "warehouse", false);
+        }
 
         OpenCage.getLocation({ latitude, longitude }).then((address) => {
 
@@ -102,49 +123,21 @@ export default function Attendance({ navigation }) {
         handleAlert("Internet Required", error, "bomb", false);
       });
 
-    var date = new Date().getDate();
-    var month = new Date().getMonth() + 1;
-    var year = new Date().getFullYear();
-    var dummyDate = date + '-' + month + '-' + year;
-    var date = year + '-' + month + '-' + date;
-    setData(prevState => ({ ...prevState, ['date']: date }));
-    setData(prevState => ({ ...prevState, ['dummyDate']: dummyDate }));
-    setDate(date);
+    const currentDate = new Date();
+    const date = currentDate.toISOString().split('T')[0];
+    const dummyDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`;
+    setData(prevState => ({ ...prevState, date }));
+    setData(prevState => ({ ...prevState, dummyDate }));
 
 
     DeviceInfo.getMacAddress().then((mac) => {
-      // console.log("mac_adddress", mac);
       setData(prevState => ({ ...prevState, ['macAddress']: mac }));
     });
 
   }
 
-  useEffect(() => {
-    getAttributes();
-  }, [])
-
-  useEffect(() => {
-    let intervalId;
-
-    if (attendance) {
-      intervalId =
-        setInterval(() => {
-          var hours = new Date().getHours();
-          var min = new Date().getMinutes();
-          var sec = new Date().getSeconds();
-          var time = hours + ':' + min + ':' + sec;
-          setData(prevState => ({ ...prevState, ['time']: time }));
-          setData(prevState => ({ ...prevState, ['date_time']: date + " " + time }));
-        }, 1000); 
-    }
-
-    return () => clearInterval(intervalId);
-
-  }, [attendance]);
-
   function rollCall() {
     if (data.base64Img != null && attendance && distance <= 50) {
-      console.log(data.date_time);
 
       setLoading(true);
       AttendanceAPI.submitAttendance(data)
@@ -156,9 +149,13 @@ export default function Attendance({ navigation }) {
             handleAlert("Confirmation", "Attendence Submitted", "clipboard-check-outline", false)
             setLoading(false);
           }
+          else {
+            handleAlert("Attendence Not Submitted", result.error.data.message, "exclamation-thick", false)
+            setLoading(false);
+          }
         })
         .catch(error => {
-          handleAlert("Internet Required", "Network request failed", "wifi-off", false)
+          handleAlert("Internet Required", 'You are not conncted to any Network.', "wifi-off", false)
           setLoading(false);
         });
     }
@@ -182,37 +179,37 @@ export default function Attendance({ navigation }) {
 
       <View style={styles.container}>
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <Text style={{ fontSize: 24, fontWeight: 'bold', marginLeft: 10, color: "#000000" }}>Attendance</Text>
+          <Text style={{ fontSize: scale(24), fontWeight: 'bold', marginLeft: moderateScale(10), color: "#000000" }}>Attendance</Text>
         </View>
 
-        <View style={{ width: '100%', alignItems: 'center', marginTop: 15, }}>
+        <View style={{ width: '100%', alignItems: 'center', marginTop: verticalScale(15), }}>
 
           <TouchableOpacity
             onPress={takePhoto}
             style={{
-              width: 200, height: 200, borderRadius: 100, backgroundColor: '#e0e0e0', justifyContent: 'center', alignItems: 'center',
+              width: moderateScale(200), height: moderateScale(200), borderRadius: scale(100), backgroundColor: '#e0e0e0', justifyContent: 'center', alignItems: 'center',
             }}>
             {image ? (
-              <Image source={{ uri: image }} style={{ width: 200, height: 200, borderRadius: 100 }} />
+              <Image source={{ uri: image }} style={{ width: moderateScale(200), height: moderateScale(200), borderRadius: scale(100) }} />
             ) : (
-              <Image source={require('../assets/logo/avatar.png')} style={{ width: 140, height: 140, borderRadius: 50 }} />
+              <Image source={require('../assets/logo/avatar.png')} style={{ width: moderateScale(140), height: moderateScale(140), borderRadius: scale(50) }} />
             )}
           </TouchableOpacity>
 
 
 
           <View style={{ margin: 5 }}>
-            <Text style={[styles.text, { marginTop: 10 }]}>Area: <Text style={{ fontSize: 15 }}>{data.location} </Text></Text>
-            <Text style={[styles.text, { marginTop: 10 }]}>Time: <Text style={{ fontSize: 15 }}>{data.dummyDate + " " + data.time} </Text></Text>
+            <Text style={[styles.text, { marginTop: verticalScale(10) }]}>Area: <Text style={{ fontSize: scale(14) }}>{data.location} </Text></Text>
+            <Text style={[styles.text, { marginTop: verticalScale(10) }]}>Time: <Text style={{ fontSize: scale(14) }}>{data.dummyDate + " " + data.time} </Text></Text>
 
-            <View style={{ width: '100%', marginTop: 10 }}>
+            <View style={{ width: '100%', marginTop: verticalScale(10) }}>
               <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <RadioButton value="checkin" color={COLORS.blue} uncheckedColor={COLORS.blue} onPress={() => setData(prevState => ({ ...prevState, ['checkStatus']: 'checkin' }))} status={data.checkStatus === 'checkin' ? 'checked' : 'unchecked'} />
-                <Text style={[styles.text, { fontSize: 15 }]}>Check In</Text>
+                <Text style={[styles.text, { fontSize: scale(14) }]}>Check In</Text>
               </View>
-              <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 10 }}>
+              <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: verticalScale(6) }}>
                 <RadioButton value="Checkout" color={COLORS.blue} uncheckedColor={COLORS.blue} onPress={() => setData(prevState => ({ ...prevState, ['checkStatus']: 'Checkout' }))} status={data.checkStatus === 'Checkout' ? 'checked' : 'unchecked'} />
-                <Text style={[styles.text, { fontSize: 15 }]}>Check Out</Text>
+                <Text style={[styles.text, { fontSize: scale(14) }]}>Check Out</Text>
               </View>
             </View>
           </View>
@@ -244,17 +241,17 @@ const styles = StyleSheet.create({
   container: {
     width: '90%',
     backgroundColor: '#FFFFFF',
-    borderRadius: 10,
-    marginTop: 30,
-    padding: 20,
+    borderRadius: scale(10),
+    marginTop: verticalScale(20),
+    padding: scale(15),
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
     },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
+    shadowOpacity: scale(0.25),
+    shadowRadius: scale(3.84),
+    elevation: scale(5),
   },
 
   view: {
@@ -266,11 +263,11 @@ const styles = StyleSheet.create({
 
   header: {
     fontWeight: 'bold',
-    fontSize: 25,
+    fontSize: scale(25),
   },
 
   text: {
-    fontSize: 18,
+    fontSize: scale(18),
     fontWeight: 'bold',
     color: '#000000',
     textTransform: 'uppercase',
@@ -278,19 +275,19 @@ const styles = StyleSheet.create({
   },
 
   touchableOpacity: {
-    height: 55,
-    width: 270,
+    height: verticalScale(50),
+    width: moderateScale(260),
     backgroundColor: COLORS.blue,
-    marginVertical: 10,
+    marginVertical: verticalScale(10),
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 10
+    borderRadius: scale(10)
   },
 
   touchableOpacityText: {
     color: COLORS.white,
     fontWeight: 'bold',
-    fontSize: 18
+    fontSize: scale(16)
   },
 
   button: {

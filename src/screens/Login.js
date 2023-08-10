@@ -1,11 +1,12 @@
-import { View, Text, StyleSheet, Image, SafeAreaView, Keyboard, Alert } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import { View, StyleSheet, Image, SafeAreaView, Keyboard, Alert } from 'react-native'
+import React, { useState } from 'react'
 import COLORS from '../conts/colors';
 import CustomButton from '../components/Button';
 import Input from '../components/Input';
 import Loader from '../components/Loader';
 import LoginAPI from '../ApiServices/Tabish_Server/LoginAPI';
-import ErrorBox from '../components/ErrorBox';
+import CustomAlert from '../components/CustomAlert';
+import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 
 export default function Login({ navigation, route, handleLoginSuccess }) {
     const [inputs, setInputs] = React.useState({
@@ -18,12 +19,10 @@ export default function Login({ navigation, route, handleLoginSuccess }) {
     const [alertBox, setAlertBox] = useState({
         showBox: false,
         title: null,
-        message: null
+        message: null,
+        icon: null,
+        confirmBtn: false
     });
-
-    const onCloseAlert = () => {
-        setAlertBox(prevState => ({ ...prevState, ["showBox"]: false }));
-    };
 
 
     function login() {
@@ -43,34 +42,36 @@ export default function Login({ navigation, route, handleLoginSuccess }) {
                             }
                             else {
                                 setLoading(false);
-                                setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: "Employee not found", ["message"]: employee }));
+                                handleAlert("Employee not found", employee, "account-cancel-outline", false);
                             }
                         })
                         .catch((error) => {
                             setLoading(false);
-                            console.log(error)
-                            setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: "Internet Required", ["message"]: error }));
+                            handleAlert("Internet Required", error, "wifi-off", false);
                         })
 
                 }
                 else if (response == false) {
                     setLoading(false);
-                    handleError('', 'username');
-                    handleError('Incorrect username or password', 'password');
+                    handleError('Incorrect username', 'username');
+                    handleError('Or Incorrect password', 'password');
                     return false;
                 }
 
             })
             .catch((error) => {
                 setLoading(false);
-                setAlertBox(prevState => ({ ...prevState, ["showBox"]: true }));
-                setAlertBox(prevState => ({ ...prevState, ["title"]: "Internet Required" }));
-                setAlertBox(prevState => ({ ...prevState, ["message"]: error }));
-                // "Network Request Failed or Server is not Responding"
+                handleAlert("Internet Required", 'You are not connected to Network or Server Error.', "wifi-off", false);
             })
-
-
     }
+
+    const handleAlert = (title, message, icon, confirmBtn) => {
+        setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: title, ["message"]: message, ["icon"]: icon, ["confirmBtn"]: confirmBtn }));
+    };
+
+    const onCloseAlert = () => {
+        setAlertBox(prevState => ({ ...prevState, ["showBox"]: false }));
+    };
 
     const validate = () => {
         Keyboard.dismiss();
@@ -105,7 +106,7 @@ export default function Login({ navigation, route, handleLoginSuccess }) {
 
             <Image style={Style.image} resizeMode="contain" source={require('../assets/logo/tabish_logo.png')} />
 
-            <View style={{ marginVertical: 20 }}>
+            <View style={{ marginVertical: verticalScale(20) }}>
                 <Input
                     onChangeText={text => handleOnchange(text, 'username')}
                     onFocus={() => handleError(null, 'username')}
@@ -114,6 +115,8 @@ export default function Login({ navigation, route, handleLoginSuccess }) {
                     placeholder="Enter your username "
                     placeholderTextColor="#000000"
                     error={errors.username}
+                    keyboardType='email-address'
+                    autoCapitalize='none'
                 />
 
                 <Input
@@ -126,11 +129,11 @@ export default function Login({ navigation, route, handleLoginSuccess }) {
                     error={errors.password}
                     password
                 />
-                <View style={{ marginTop: 30 }}>
+                <View style={{ marginTop: verticalScale(20) }}>
                     <CustomButton title="Login" onPress={validate} />
                 </View>
             </View>
-            <ErrorBox visible={alertBox.showBox} onClose={onCloseAlert} title={alertBox.title} message={alertBox.message} />
+            <CustomAlert visible={alertBox.showBox} onClose={onCloseAlert} title={alertBox.title} message={alertBox.message} icon={alertBox.icon} />
         </SafeAreaView>
     )
 }
@@ -143,14 +146,14 @@ const Style = StyleSheet.create({
 
     },
     text: {
-        fontSize: 40,
+        fontSize: scale(40),
         fontWeight: 'bold',
         color: COLORS.black,
     },
 
     image: {
-        width: 330,
-        marginBottom: 20,
-        marginTop: 80
+        width: moderateScale(330),
+        marginBottom: verticalScale(20),
+        marginTop: verticalScale(70)
     }
 });

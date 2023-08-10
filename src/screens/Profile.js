@@ -3,8 +3,10 @@ import React, { useEffect, useState } from 'react'
 import Loader from '../components/Loader';
 import ProfileAPI from '../ApiServices/Tabish_Server/ProfileAPI';
 import COLORS from '../conts/colors';
+import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
+import CustomAlert from '../components/CustomAlert';
 
-export default function Profile() {
+export default function Profile({ navigation }) {
   const [loading, setLoading] = React.useState(true);
   const [imageSource, setimageSource] = useState(null);
   const [name, setName] = useState(null);
@@ -16,12 +18,30 @@ export default function Profile() {
   const [home_address, setHome_address] = useState(null);
   const [joining_date, setJoining_date] = useState(null);
   const [manager, setManager] = useState(null);
+  const [alertBox, setAlertBox] = useState({
+    showBox: false,
+    title: null,
+    message: null,
+    icon: null,
+    confirmBtn: false
+  });
 
-  const [showInfo, setShowInfo] = useState(false);
+  const handleAlert = (title, message, icon, confirmBtn) => {
+    setAlertBox({ ["showBox"]: true, ["title"]: title, ["message"]: message, ["icon"]: icon, ["confirmBtn"]: confirmBtn });
+  };
+
+  const onCloseAlert = () => {
+    setAlertBox(prevState => ({ ...prevState, ["showBox"]: false }));
+  };
 
   useEffect(() => {
-    getProfile();
-  }, []);
+    const unsubscribe = navigation.addListener('focus', () => {
+      getProfile();
+    });
+
+    return unsubscribe;
+  }, [navigation]);
+
 
   function getProfile() {
     ProfileAPI.getProfile()
@@ -45,14 +65,13 @@ export default function Profile() {
           setLoading(false);
 
         }
-      });
+      })
+      .catch(() => {
+        setLoading(false);
+        handleAlert("Internet Required", 'You are not connected to Network or Server Error.', "wifi-off", false);
+      })
 
   }
-
-  const handlePress = () => {
-    setShowInfo(!showInfo);
-  };
-
 
   if (loading == false) {
     return (
@@ -60,12 +79,15 @@ export default function Profile() {
 
         <View style={styles.mainContainer}>
           <View style={styles.header}>
-            { imageSource &&<Image source={{ uri: imageSource }} style={styles.profileImage} />}
-            <Text style={styles.name}>{name}</Text>
+            {imageSource ? <>
+              <Image source={{ uri: imageSource }} style={styles.profileImage} />
+              <Text style={styles.name}>{name}</Text>
+            </> :
+              <Image source={require('../assets/logo/avatar.png')} style={styles.profileImage} />
+            }
           </View>
 
           <View style={[styles.container,
-            // { backgroundColor: "#de3745" }
           ]}>
             <Text style={styles.headerText}>Job Information</Text>
           </View>
@@ -98,17 +120,10 @@ export default function Profile() {
             </View>
           )}
 
-
-
-          {/* <TouchableOpacity style={styles.container} onPress={handlePress}>
-            <Text style={styles.headerText}>Personal Information</Text>
-          </TouchableOpacity> */}
-
           <View style={[styles.container,]}>
             <Text style={styles.headerText}>Personal Information</Text>
           </View>
 
-          {/* {showInfo && ( */}
           <View>
             {identification_id && (
               <View style={styles.infoRow}>
@@ -138,6 +153,7 @@ export default function Profile() {
           {/* )} */}
 
         </View>
+        <CustomAlert visible={alertBox.showBox} onClose={onCloseAlert} title={alertBox.title} message={alertBox.message} icon={alertBox.icon} />
       </View>
     )
   }
@@ -152,58 +168,58 @@ const styles = StyleSheet.create({
   mainContainer: {
     width: '90%',
     backgroundColor: '#FFFFFF',
-    borderRadius: 10,
-    marginTop: 30,
-    padding: 20,
+    borderRadius: scale(10),
+    marginTop: verticalScale(20),
+    padding: scale(20),
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
       height: 2,
     },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
+    shadowOpacity: scale(0.25),
+    shadowRadius: scale(3.84),
+    elevation: scale(5),
   },
   container: {
     width: '100%',
     backgroundColor: COLORS.blue,
-    borderRadius: 10,
-    padding: 14,
-    marginTop: 20,
+    borderRadius: scale(10),
+    padding: scale(14),
+    marginTop: verticalScale(20),
   },
   profileImage: {
-    width: 120,
-    height: 120,
-    borderRadius: 60,
+    width: moderateScale(120),
+    height: moderateScale(120),
+    borderRadius: scale(60),
   },
   name: {
-    fontSize: 24,
+    fontSize: scale(24),
     fontWeight: 'bold',
-    marginTop: 10,
+    marginTop: verticalScale(10),
     color: "#000000",
   },
 
   header: {
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: verticalScale(10),
   },
   headerText: {
     color: "#FFFFFF",
-    fontSize: 16,
+    fontSize: scale(15),
     fontWeight: 'bold',
   },
   infoRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: 15,
+    marginTop: verticalScale(12),
   },
   infoIcon: {
-    width: 20,
-    height: 20,
-    marginRight: 10,
+    width: moderateScale(20),
+    height: moderateScale(20),
+    marginRight: moderateScale(10),
   },
   infoText: {
     color: '#000000',
-    fontSize: 14,
+    fontSize: scale(12),
   },
 });

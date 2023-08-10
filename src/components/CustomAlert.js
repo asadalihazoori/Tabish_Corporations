@@ -3,6 +3,8 @@ import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 import Modal from 'react-native-modal';
 import COLORS from '../conts/colors';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
+
 
 export default function CustomDialog({ visible, onConfirm, confirmBtn, onClose, title, message, icon }) {
     const handleClose = () => {
@@ -17,17 +19,17 @@ export default function CustomDialog({ visible, onConfirm, confirmBtn, onClose, 
             <View style={styles.container}>
                 <View style={styles.box}>
                     <View style={{ alignItems: 'center' }}>
-                        <Icon name={icon} style={styles.icon} size={40} />
+                        <Icon name={icon} style={styles.icon} size={scale(36)} />
                     </View>
                     <Text style={styles.title}>{title}</Text>
                     <Text style={styles.message}>{message}</Text>
-                    <View style={{ flexDirection: 'row', justifyContent: 'flex-end'}}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'flex-end' }}>
                         {confirmBtn &&
                             <TouchableOpacity style={[styles.button]} onPress={handleConfirm}>
                                 <Text style={styles.buttonText}>OK</Text>
                             </TouchableOpacity>
-                         }
-                        <TouchableOpacity style={[styles.button, {marginLeft: 10}]}
+                        }
+                        <TouchableOpacity style={[styles.button, { marginLeft: moderateScale(10) }]}
                             onPress={handleClose}>
                             <Text style={styles.buttonText}>{confirmBtn ? "Cancel" : "OK"}</Text>
                         </TouchableOpacity>
@@ -51,37 +53,37 @@ const styles = StyleSheet.create({
 
     box: {
         backgroundColor: '#ffffff',
-        borderRadius: 10,
-        padding: 20,
-        width: 300,
+        borderRadius: scale(10),
+        padding: scale(20),
+        width: moderateScale(280),
     },
 
     icon: {
         alignItems: 'center',
         justifyContent: 'center',
-        marginBottom: 15,
+        marginBottom: verticalScale(15),
         color: COLORS.blue
     },
     title: {
-        fontSize: 18,
+        fontSize: scale(18),
         fontWeight: 'bold',
-        marginBottom: 10,
+        marginBottom: verticalScale(8),
         color: "#000000"
     },
     message: {
         color: "#000000",
-        fontSize: 16,
-        marginBottom: 20,
+        fontSize: scale(14),
+        marginBottom: verticalScale(14),
     },
     button: {
         backgroundColor: COLORS.blue,
         borderRadius: 5,
         textAlign: 'center',
-        paddingHorizontal: 20,
-        paddingVertical: 10,
+        paddingHorizontal: moderateScale(18),
+        paddingVertical: verticalScale(10),
     },
     buttonText: {
-        fontSize: 16,
+        fontSize: scale(14),
         color: '#ffffff',
     },
 });

@@ -19,7 +19,6 @@ Object.defineProperty(sessionDetail, 'database', {
 Object.defineProperty(sessionDetail, 'employee_model', {
     // value: "hr.employee.wags",
     value: "hr.employee",
-    // writable: true, 
     enumerable: true,
     configurable: true
 });
@@ -85,9 +84,8 @@ Object.defineProperty(sessionDetail, 'job_title', {
 
 Object.defineProperty(sessionDetail, 'fixedLatitude', {
     // value: 31.498563, // latest tabish working
-    // value: 31.498778, //tabish
     // value: 32.0398006, // ecube office
-    value: 30.259649,
+    value: 30.259649, // me
     writable: true,
     enumerable: true,
     configurable: true
@@ -95,9 +93,8 @@ Object.defineProperty(sessionDetail, 'fixedLatitude', {
 
 Object.defineProperty(sessionDetail, 'fixedLongitude', {
     // value: 74.318486, //latest tabish working
-    // value: 74.318139, //tabish previous
     // value: 72.7121435, // ecube office
-    value: 73.0499619, 
+    value: 73.0499619,  //me
     writable: true,
     enumerable: true,
     configurable: true

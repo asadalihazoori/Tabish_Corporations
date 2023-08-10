@@ -2,6 +2,8 @@ import React from 'react';
 import { View, Text, TextInput, StyleSheet, Keyboard } from 'react-native';
 import COLORS from '../conts/colors';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
+
 const Input = ({
   label,
   iconName,
@@ -15,7 +17,7 @@ const Input = ({
   const [hidePassword, setHidePassword] = React.useState(password);
   const [isFocused, setIsFocused] = React.useState(false);
   return (
-    <View style={{ marginBottom: 20 }}>
+    <View style={{ marginBottom: verticalScale(20) }}>
       <Text style={style.label}>{label}</Text>
       <View
         style={[
@@ -31,11 +33,11 @@ const Input = ({
         ]}>
         <Icon
           name={iconName}
-          style={{ color: COLORS.blue, fontSize: 22, marginRight: 10 }}
+          style={{ color: COLORS.blue, fontSize: scale(20), marginRight: moderateScale(10) }}
         />
         <TextInput
-        value={value}
-        keyboardType={keyboardType}
+          value={value}
+          keyboardType={keyboardType}
           autoCorrect={false}
           onFocus={() => {
             onFocus();
@@ -51,12 +53,12 @@ const Input = ({
           <Icon
             onPress={() => setHidePassword(!hidePassword)}
             name={hidePassword ? 'eye-outline' : 'eye-off-outline'}
-            style={{ color: COLORS.blue, fontSize: 22 }}
+            style={{ color: COLORS.blue, fontSize: scale(20) }}
           />
         )}
       </View>
       {error && (
-        <Text style={{ marginTop: 7, color: COLORS.red, fontSize: 12 }}>
+        <Text style={{ marginTop: verticalScale(7), color: COLORS.red, fontSize: scale(12) }}>
           {error}
         </Text>
       )}
@@ -66,18 +68,18 @@ const Input = ({
 
 const style = StyleSheet.create({
   label: {
-    marginVertical: 5,
-    fontSize: 16,
+    marginVertical: verticalScale(5),
+    fontSize: scale(14),
     color: COLORS.black,
-    marginBottom: 10
+    marginBottom: verticalScale(10)
   },
   inputContainer: {
-    height: 55,
+    height: verticalScale(50),
     backgroundColor: COLORS.light,
     flexDirection: 'row',
-    paddingHorizontal: 15,
-    borderWidth: 0.5,
-    width: 330
+    paddingHorizontal: scale(15),
+    borderWidth: scale(0.5),
+    width: moderateScale(310)
   },
 });
 

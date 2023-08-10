@@ -4,7 +4,6 @@ import axios from 'axios';
 
 export default class AttendanceAPI extends Component {
   static submitAttendance(data) {
-    console.log("datetime", data.date_time);
     const headers = {
       'Content-Type': 'application/json',
       'Cookie': `session_id=${sessionDetail.session_Id}`
@@ -29,7 +28,7 @@ export default class AttendanceAPI extends Component {
             employee_location: data.location,
             shift_id: sessionDetail.shift,
             department: data.department,
-            attendance_date: data.date_time,
+            attendance_date: `${data.date} ${data.time}`,
           }
         ],
         kwargs: {}
@@ -48,7 +47,6 @@ export default class AttendanceAPI extends Component {
         return response.data;
       })
       .catch(error => {
-        console.error(error);
         throw error;
       });
 

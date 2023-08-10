@@ -1,4 +1,4 @@
-#Sun Jul 30 12:25:28 PKT 2023
+#Fri Aug 11 01:20:06 PKT 2023
 base.1=C\:\\Users\\Hazoori\\Documents\\GitHub\\Tabish_Corporations\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex
 path.1=classes2.dex
 base.0=C\:\\Users\\Hazoori\\Documents\\GitHub\\Tabish_Corporations\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
