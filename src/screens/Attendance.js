@@ -107,9 +107,9 @@ export default function Attendance({ navigation }) {
         const distance = CheckDistance({ latitude, longitude });
         setDistance(distance.toFixed(2));
         console.log("distance", distance);
-        if (distance > 50) {
-          handleAlert("Out of Range", `You are ${distance.toFixed(2)} meters away from WareHouse`, "warehouse", false);
-        }
+        // if (distance > 75) {
+        //   handleAlert("Out of Range", `You are ${distance.toFixed(2)} meters away from WareHouse`, "warehouse", false);
+        // }
 
         OpenCage.getLocation({ latitude, longitude }).then((address) => {
 
@@ -137,7 +137,7 @@ export default function Attendance({ navigation }) {
   }
 
   function rollCall() {
-    if (data.base64Img != null && attendance && distance <= 50) {
+    if (data.base64Img != null && attendance && distance <= 75) {
 
       setLoading(true);
       AttendanceAPI.submitAttendance(data)
@@ -163,7 +163,7 @@ export default function Attendance({ navigation }) {
       if (!attendance) {
         handleAlert("Attendance Already Submitted", "Do you want to submit again?", "arrow-u-left-bottom-bold", true);
       }
-      else if (distance > 50) {
+      else if (distance > 75) {
         handleAlert("Out of Range", `You are ${distance} meters away from WareHouse`, "warehouse", false);
       }
       else {

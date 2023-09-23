@@ -83,18 +83,18 @@ Object.defineProperty(sessionDetail, 'job_title', {
 });
 
 Object.defineProperty(sessionDetail, 'fixedLatitude', {
-    // value: 31.498563, // latest tabish working
+    value: 31.498563, // latest tabish working
     // value: 32.0398006, // ecube office
-    value: 30.259649, // me
+    // value: 30.259649, // me
     writable: true,
     enumerable: true,
     configurable: true
 });
 
 Object.defineProperty(sessionDetail, 'fixedLongitude', {
-    // value: 74.318486, //latest tabish working
+    value: 74.318486, //latest tabish working
     // value: 72.7121435, // ecube office
-    value: 73.0499619,  //me
+    // value: 73.0499619,  //me
     writable: true,
     enumerable: true,
     configurable: true

@@ -32,7 +32,7 @@ export default class ProfileAPI extends Component {
                         "job_id",
                         "department_id",
                         "joining_date",
-                        "identification_id",
+                        // "identification_id",
                         "phone",
                         "parent_id",
                         "first_email",

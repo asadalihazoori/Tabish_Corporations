@@ -11,7 +11,7 @@ export default function Profile({ navigation }) {
   const [imageSource, setimageSource] = useState(null);
   const [name, setName] = useState(null);
   const [job_title, setJob_id] = useState(null);
-  const [identification_id, setIdentification_id] = useState(null);
+  // const [identification_id, setIdentification_id] = useState(null);
   const [first_email, setFirst_email] = useState(null);
   const [department_id, setDepartment_id] = useState(null);
   const [phone, setPhone] = useState(null);
@@ -53,7 +53,7 @@ export default function Profile({ navigation }) {
           setName(data.result[0].name);
           setJob_id(data.result[0].job_id[1]);
           setPhone(data.result[0].phone);
-          setIdentification_id(data.result[0].identification_id);
+          // setIdentification_id(data.result[0].identification_id);
           setDepartment_id(data.result[0].department_id[1]);
           setFirst_email(data.result[0].first_email);
           setHome_address(data.result[0].home_address);
@@ -125,12 +125,12 @@ export default function Profile({ navigation }) {
           </View>
 
           <View>
-            {identification_id && (
+            {/* {identification_id && (
               <View style={styles.infoRow}>
                 <Image source={require('../assets/icons/id-card.png')} style={styles.infoIcon} />
                 <Text style={styles.infoText}>CNIC: {identification_id}</Text>
               </View>
-            )}
+            )} */}
             {phone && (
               <View style={styles.infoRow}>
                 <Image source={require('../assets/icons/telephone.png')} style={styles.infoIcon} />
