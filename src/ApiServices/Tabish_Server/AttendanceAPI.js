@@ -15,7 +15,7 @@ export default class AttendanceAPI extends Component {
         model: 'ecube.raw.attendance',
         args: [
           {
-            employee_id: sessionDetail.Id,
+            // employee_id: sessionDetail.Id,
             machine_id: data.machine_id,
             lattidude: data.latitude,
             logitide: data.longitude,

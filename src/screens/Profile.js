@@ -120,9 +120,11 @@ export default function Profile({ navigation }) {
             </View>
           )}
 
-          <View style={[styles.container,]}>
-            <Text style={styles.headerText}>Personal Information</Text>
-          </View>
+          {(phone || first_email || home_address) &&
+            (<View style={[styles.container,]}>
+              <Text style={styles.headerText}>Personal Information</Text>
+            </View>)
+          }
 
           <View>
             {/* {identification_id && (

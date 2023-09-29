@@ -42,7 +42,7 @@ export default function Login({ navigation, route, handleLoginSuccess }) {
                             }
                             else {
                                 setLoading(false);
-                                handleAlert("Employee not found", employee, "account-cancel-outline", false);
+                                handleAlert("Employee Not Found", `Please Login Again ${employee}`, "account-cancel-outline", false);
                             }
                         })
                         .catch((error) => {
@@ -66,7 +66,7 @@ export default function Login({ navigation, route, handleLoginSuccess }) {
     }
 
     const handleAlert = (title, message, icon, confirmBtn) => {
-        setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: title, ["message"]: message, ["icon"]: icon, ["confirmBtn"]: confirmBtn }));
+        setAlertBox(prevState => ({ ...prevState, ["showBox"]: true, ["title"]: title, ["message"]: String(message), ["icon"]: icon, ["confirmBtn"]: confirmBtn }));
     };
 
     const onCloseAlert = () => {
@@ -127,6 +127,7 @@ export default function Login({ navigation, route, handleLoginSuccess }) {
                     placeholder="Enter your password"
                     placeholderTextColor="#000000"
                     error={errors.password}
+                    autoCapitalize='none'
                     password
                 />
                 <View style={{ marginTop: verticalScale(20) }}>

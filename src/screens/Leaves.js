@@ -71,16 +71,19 @@ export default function Leaves({ navigation }) {
           <Text style={styles.header}>Availed</Text>
           <Text style={styles.header}>Remaining</Text>
         </View>
-        {attendanceData.length > 0 ?
-          <FlatList
-            data={attendanceData}
-            renderItem={renderItem}
-            keyExtractor={(item) => item.id.toString()}
-          />
-          :
-          <View style={styles.nullContainer}>
-            <Text style={styles.text}>No Leaves Record Found !</Text>
-          </View>}
+
+        {loading ? <></> :
+          attendanceData.length > 0 ?
+            <FlatList
+              data={attendanceData}
+              renderItem={renderItem}
+              keyExtractor={(item) => item.id.toString()}
+            />
+            :
+            <View style={styles.nullContainer}>
+              <Text style={styles.text}>No Leaves Record Found !</Text>
+            </View>
+        }
         <CustomAlert visible={alertBox.showBox} onClose={onCloseAlert} title={alertBox.title} message={alertBox.message} icon={alertBox.icon} />
       </View>
     </>

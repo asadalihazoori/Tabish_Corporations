@@ -1,6 +1,6 @@
 <lint-module
     format="1"
-    dir="C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app"
+    dir="E:\GitHub\Tabish_Corporations\android\app"
     name=":app"
     type="APP"
     maven="tabishCorporation:app:"

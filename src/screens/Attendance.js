@@ -37,7 +37,7 @@ export default function Attendance({ navigation }) {
     macAddress: null,
     checkStatus: 'checkin',
     base64Img: null,
-    machine_id: sessionDetail.Id,
+    machine_id: sessionDetail.emp_code,
     department: sessionDetail.Department,
     date_time: null
   });
@@ -163,9 +163,9 @@ export default function Attendance({ navigation }) {
       if (!attendance) {
         handleAlert("Attendance Already Submitted", "Do you want to submit again?", "arrow-u-left-bottom-bold", true);
       }
-      else if (distance > 75) {
-        handleAlert("Out of Range", `You are ${distance} meters away from WareHouse`, "warehouse", false);
-      }
+      // else if (distance > 135) {
+      //   handleAlert("Out of Range", `You are ${distance} meters away from WareHouse`, "warehouse", false);
+      // }
       else {
         handleAlert("Alert", "Image Required", "image-remove", false);
       }
@@ -199,14 +199,24 @@ export default function Attendance({ navigation }) {
 
 
           <View style={{ margin: 5 }}>
-            <Text style={[styles.text, { marginTop: verticalScale(10) }]}>Area: <Text style={{ fontSize: scale(14) }}>{data.location} </Text></Text>
-            <Text style={[styles.text, { marginTop: verticalScale(10) }]}>Time: <Text style={{ fontSize: scale(14) }}>{data.dummyDate + " " + data.time} </Text></Text>
+
+            <Text style={[styles.text, {
+              marginTop: verticalScale(10),
+            }]}>Area: <Text style={{ fontSize: scale(14), }}>{data.location} </Text></Text>
+
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: verticalScale(10) }}>
+              <Text style={[styles.text]}>Time:  </Text>
+              <Text style={[styles.text, { fontSize: scale(14) }]}>{data.dummyDate + " " + data.time} </Text>
+
+            </View>
 
             <View style={{ width: '100%', marginTop: verticalScale(10) }}>
               <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <RadioButton value="checkin" color={COLORS.blue} uncheckedColor={COLORS.blue} onPress={() => setData(prevState => ({ ...prevState, ['checkStatus']: 'checkin' }))} status={data.checkStatus === 'checkin' ? 'checked' : 'unchecked'} />
                 <Text style={[styles.text, { fontSize: scale(14) }]}>Check In</Text>
               </View>
+
+
               <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: verticalScale(6) }}>
                 <RadioButton value="Checkout" color={COLORS.blue} uncheckedColor={COLORS.blue} onPress={() => setData(prevState => ({ ...prevState, ['checkStatus']: 'Checkout' }))} status={data.checkStatus === 'Checkout' ? 'checked' : 'unchecked'} />
                 <Text style={[styles.text, { fontSize: scale(14) }]}>Check Out</Text>

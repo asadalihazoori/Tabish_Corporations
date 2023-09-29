@@ -116,6 +116,42 @@
                     }
                 },
                 {
+                    "source": "E:\\GitHub\\Tabish_Corporations\\android\\app\\build\\generated\\res\\resValues\\release\\values\\gradleResValues.xml",
+                    "from": {
+                        "startLines": "6,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "159,265",
+                        "endColumns": "63,68",
+                        "endOffsets": "218,329"
+                    },
+                    "to": {
+                        "startLines": "709,710",
+                        "startColumns": "4,4",
+                        "startOffsets": "45462,45526",
+                        "endColumns": "63,68",
+                        "endOffsets": "45521,45590"
+                    }
+                },
+                {
+                    "source": "E:\\GitHub\\Tabish_Corporations\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "273"
+                    },
+                    "to": {
+                        "startLines": "903",
+                        "startColumns": "4",
+                        "startOffsets": "66617",
+                        "endLines": "906",
+                        "endColumns": "12",
+                        "endOffsets": "66795"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Hazoori\\.gradle\\caches\\transforms-3\\85e4bbe9c5d78990c6ba607fb1c9ab7a\\transformed\\jetified-savedstate-1.1.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -147,23 +183,6 @@
                         "startOffsets": "44714,53518",
                         "endColumns": "67,166",
                         "endOffsets": "44777,53680"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Hazoori\\Documents\\GitHub\\Tabish_Corporations\\android\\app\\build\\generated\\res\\resValues\\release\\values\\gradleResValues.xml",
-                    "from": {
-                        "startLines": "6,8",
-                        "startColumns": "4,4",
-                        "startOffsets": "159,265",
-                        "endColumns": "63,68",
-                        "endOffsets": "218,329"
-                    },
-                    "to": {
-                        "startLines": "709,710",
-                        "startColumns": "4,4",
-                        "startOffsets": "45462,45526",
-                        "endColumns": "63,68",
-                        "endOffsets": "45521,45590"
                     }
                 },
                 {
@@ -203,6 +222,23 @@
                     }
                 },
                 {
+                    "source": "E:\\GitHub\\Tabish_Corporations\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "55",
+                        "endOffsets": "68"
+                    },
+                    "to": {
+                        "startLines": "747",
+                        "startColumns": "4",
+                        "startOffsets": "48132",
+                        "endColumns": "55",
+                        "endOffsets": "48183"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Hazoori\\.gradle\\caches\\transforms-3\\89c74619230cb416f438fb23f75cecaa\\transformed\\jetified-drawee-2.5.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,141",
@@ -219,23 +255,6 @@
                         "endLines": "6100,6751",
                         "endColumns": "22,22",
                         "endOffsets": "357379,376769"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Hazoori\\Documents\\GitHub\\Tabish_Corporations\\android\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "55",
-                        "endOffsets": "68"
-                    },
-                    "to": {
-                        "startLines": "747",
-                        "startColumns": "4",
-                        "startOffsets": "48132",
-                        "endColumns": "55",
-                        "endOffsets": "48183"
                     }
                 },
                 {
@@ -346,25 +365,6 @@
                         "startOffsets": "41546,41586,42020,42246,42301,43549,43603,43655,43704,43765",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "41581,41628,42058,42296,42343,43598,43650,43699,43760,43810"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Hazoori\\Documents\\GitHub\\Tabish_Corporations\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "273"
-                    },
-                    "to": {
-                        "startLines": "903",
-                        "startColumns": "4",
-                        "startOffsets": "66617",
-                        "endLines": "906",
-                        "endColumns": "12",
-                        "endOffsets": "66795"
                     }
                 },
                 {

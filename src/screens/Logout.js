@@ -18,9 +18,13 @@ function Logout() {
     sessionDetail.session_Id = null;
     sessionDetail.Id = null;
     sessionDetail.employee_id = null;
+    sessionDetail.emp_code = null;
+    sessionDetail.Department = null;
+    sessionDetail.shift = null;
+    sessionDetail.profile_image = null;
+
     sessionDetail.employee_name = null;
     sessionDetail.job_title = null;
-    sessionDetail.profile_image = null;
 
   }, [navigation]);
 

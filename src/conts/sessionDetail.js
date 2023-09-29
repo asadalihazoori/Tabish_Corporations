@@ -44,6 +44,13 @@ Object.defineProperty(sessionDetail, 'employee_id', {
     configurable: true
 });
 
+Object.defineProperty(sessionDetail, 'emp_code', {
+    value: null,
+    writable: true,
+    enumerable: true,
+    configurable: true
+});
+
 Object.defineProperty(sessionDetail, 'Department', {
     value: null,
     writable: true,

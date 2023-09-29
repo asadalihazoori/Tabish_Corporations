@@ -9,40 +9,40 @@
 9        android:targetSdkVersion="33" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\debug\AndroidManifest.xml:5:5-77
-11-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\debug\AndroidManifest.xml:5:22-75
+11-->E:\GitHub\Tabish_Corporations\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->E:\GitHub\Tabish_Corporations\android\app\src\debug\AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:3:5-67
-12-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:3:22-64
+12-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:3:5-67
+12-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:3:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-13-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:4:5-75
-13-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:4:22-73
+13-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:4:5-75
+13-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:4:22-73
 14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-14-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:5:5-80
-14-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:5:22-78
+14-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:5:5-80
+14-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:5:22-78
 15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-15-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:6:5-79
-15-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:6:22-76
+15-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:6:5-79
+15-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:6:22-76
 16    <uses-permission android:name="android.permission.CAMERA" />
-16-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:7:5-64
-16-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:7:22-62
+16-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:7:5-64
+16-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:7:22-62
 17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-17-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:8:5-80
-17-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:8:22-77
+17-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:8:5-80
+17-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:8:22-77
 18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-18-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:9:5-81
-18-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:9:22-78
+18-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:9:5-81
+18-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:9:22-78
 19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-19-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:10:5-79
-19-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:10:22-76
+19-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:10:5-79
+19-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:10:22-76
 20
 21    <queries>
-21-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:15
+21-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:15
 22        <intent>
-22-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
+22-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
 23            <action android:name="android.media.action.IMAGE_CAPTURE" />
-23-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-73
-23-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-70
+23-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-73
+23-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-70
 24        </intent>
 25    </queries> <!-- Required by older versions of Google Play services to create IID tokens -->
 26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -53,80 +53,80 @@
 27-->[com.android.installreferrer:installreferrer:1.1.2] C:\Users\Hazoori\.gradle\caches\transforms-3\77498e0166932904294411b98df9c2b7\transformed\jetified-installreferrer-1.1.2\AndroidManifest.xml:9:22-107
 28
 29    <application
-29-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:12:5-32:19
+29-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:12:5-32:19
 30        android:name="com.tabishcorporation.MainApplication"
-30-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:14:7-38
+30-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:14:7-38
 31        android:allowBackup="false"
-31-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:18:7-34
+31-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:18:7-34
 32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 32-->[androidx.core:core:1.7.0] C:\Users\Hazoori\.gradle\caches\transforms-3\08e1174eef2c209ea18090f1084adbcb\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 33        android:debuggable="true"
 34        android:icon="@mipmap/ic_launcher"
-34-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:16:7-41
+34-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:16:7-41
 35        android:label="@string/app_name"
-35-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:15:7-39
+35-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:15:7-39
 36        android:roundIcon="@mipmap/ic_launcher_round"
-36-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:17:7-52
+36-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:17:7-52
 37        android:theme="@style/AppTheme"
-37-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:19:7-38
+37-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:19:7-38
 38        android:usesCleartextTraffic="true" >
-38-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:13:5-40
+38-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:13:5-40
 39        <activity
-39-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\debug\AndroidManifest.xml:11:9-111
+39-->E:\GitHub\Tabish_Corporations\android\app\src\debug\AndroidManifest.xml:11:9-111
 40            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-40-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\debug\AndroidManifest.xml:11:19-83
+40-->E:\GitHub\Tabish_Corporations\android\app\src\debug\AndroidManifest.xml:11:19-83
 41            android:exported="false" />
-41-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\debug\AndroidManifest.xml:11:84-108
+41-->E:\GitHub\Tabish_Corporations\android\app\src\debug\AndroidManifest.xml:11:84-108
 42        <activity
-42-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:20:7-31:18
+42-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:20:7-31:18
 43            android:name="com.tabishcorporation.MainActivity"
-43-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:21:9-37
+43-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:21:9-37
 44            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-44-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:23:9-118
+44-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:23:9-118
 45            android:exported="true"
-45-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:26:9-32
+45-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:26:9-32
 46            android:label="@string/app_name"
-46-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:22:9-41
+46-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:22:9-41
 47            android:launchMode="singleTask"
-47-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:24:9-40
+47-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:24:9-40
 48            android:windowSoftInputMode="adjustResize" >
-48-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:25:9-51
+48-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:25:9-51
 49            <intent-filter>
-49-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:27:9-30:25
+49-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:27:9-30:25
 50                <action android:name="android.intent.action.MAIN" />
-50-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:28:13-65
-50-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:28:21-62
+50-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:28:13-65
+50-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:28:21-62
 51
 52                <category android:name="android.intent.category.LAUNCHER" />
-52-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:29:13-73
-52-->C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:29:23-70
+52-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:29:13-73
+52-->E:\GitHub\Tabish_Corporations\android\app\src\main\AndroidManifest.xml:29:23-70
 53            </intent-filter>
 54        </activity>
 55
 56        <provider
-56-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-26:20
+56-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-26:20
 57            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
-57-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-94
+57-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-94
 58            android:authorities="com.tabishcorporation.provider"
-58-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-60
+58-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-60
 59            android:exported="false"
-59-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+59-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
 60            android:grantUriPermissions="true" >
-60-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-47
+60-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-47
 61            <meta-data
-61-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:78
+61-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:78
 62                android:name="android.support.FILE_PROVIDER_PATHS"
-62-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-67
+62-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-67
 63                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
-63-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-75
+63-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:17-75
 64        </provider>
 65
 66        <activity
-66-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-30:72
+66-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-30:72
 67            android:name="com.yalantis.ucrop.UCropActivity"
-67-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-60
+67-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-60
 68            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-68-->[:react-native-image-crop-picker] C:\Users\Hazoori\Documents\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-69
+68-->[:react-native-image-crop-picker] E:\GitHub\Tabish_Corporations\node_modules\react-native-image-crop-picker\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-69
 69        <activity
 69-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Hazoori\.gradle\caches\transforms-3\bba8b0a0859a6350c0a29a8db486a41f\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 70            android:name="com.google.android.gms.common.api.GoogleApiActivity"

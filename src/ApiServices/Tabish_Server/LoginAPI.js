@@ -61,22 +61,29 @@ export default class LoginAPI extends Component {
           ],
         ],
         kwargs: {
-          fields: ['id', 'schedule', 'department_id', 'job_id', 'image', 'name'],
+          fields: ['id', 'schedule', 'department_id', 'job_id', 'image', 'name', 'emp_code'],
         },
       },
     };
 
     return axios.post(callKwUrl, callKwBody, { headers: callKwHeaders })
 
-      .then(response => response.data.result)
+      .then(response => {
+        console.log("response", response.data.result);
+
+        return response.data.result
+      }
+      )
       .then(data => {
         var id = null;
-        if (data.length > 0) {
+        // console.log(data);
+        if (data?.length > 0) {
           id = data[0].id;
-          console.log(data[0])
+          // console.log('inside if', data[0])
           sessionDetail.Department = data[0].department_id[0];
           sessionDetail.shift = data[0].schedule[0];
           sessionDetail.Id = id;
+          sessionDetail.emp_code = data[0].emp_code;
 
           const base64String = data[0].image;
           sessionDetail.employee_name = data[0].name;
@@ -86,6 +93,7 @@ export default class LoginAPI extends Component {
         return id;
       })
       .catch(error => {
+        console.log("error", error, "error");
         throw error;
       });
 

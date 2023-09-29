@@ -47,6 +47,16 @@ export default function ViewAttendance({ navigation }) {
       })
   };
 
+  const TimeFormattor = (inputTime) => {
+
+    const [hours, minutes, seconds] = inputTime.split(':');
+    const formattedHours = parseInt(hours) > 12 ? parseInt(hours) - 12 : hours == 0 ? 12 : hours;
+    const amOrPm = parseInt(hours) >= 12 ? 'PM' : 'AM';
+
+    const formattedTime = `${formattedHours}:${minutes}:${seconds} ${amOrPm}`;
+    return formattedTime;
+  }
+
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
       fetchAttendanceData();
@@ -58,8 +68,11 @@ export default function ViewAttendance({ navigation }) {
   const renderItem = ({ item }) => (
     <View style={styles.row}>
       <Text style={styles.cell}>{item.date}</Text>
-      <Text style={styles.cell}>{item.time}</Text>
-      <Text style={styles.cell}>{item.attendance_status}</Text>
+      <Text style={[styles.cell, { marginRight: 0 }]}>{TimeFormattor(item.time)}</Text>
+      <Text style={[styles.cell, { marginLeft: 0 }]}>{item.attendance_status == 'checkin' ? 'CheckIn' :
+        (item.attendance_status == 'Checkout') ? 'CheckOut' :
+          (item.attendance_status == false) ? 'Not Found' :
+            `${item.attendance_status}`}</Text>
     </View>
   );
 
@@ -69,21 +82,24 @@ export default function ViewAttendance({ navigation }) {
     <>
       <Loader visible={loading} />
       <View style={styles.container}>
-        <View style={styles.row}>
-          <Text style={styles.header}>Date</Text>
-          <Text style={styles.header}>Time</Text>
-          <Text style={styles.header}>Status</Text>
+        <View style={[styles.row, { columnGap: 30 }]}>
+          <Text style={[styles.header, { textAlign: 'center' }]}>Time</Text>
+          <Text style={[styles.header, { textAlign: 'center' }]}>Date</Text>
+          <Text style={[styles.header, { textAlign: 'center' }]}>Status</Text>
         </View>
-        {attendanceData.length > 0 ?
-          <FlatList
-            data={attendanceData}
-            renderItem={renderItem}
-            keyExtractor={(item) => item.id.toString()}
-          />
-          :
-          <View style={styles.nullContainer}>
-            <Text style={styles.text}>No Attendance Record Found !</Text>
-          </View>}
+
+        {loading ? <></> :
+          attendanceData.length > 0 ?
+            <FlatList
+              data={attendanceData}
+              renderItem={renderItem}
+              keyExtractor={(item) => item.id.toString()}
+            />
+            :
+            <View style={styles.nullContainer}>
+              <Text style={styles.text}>No Attendance Record Found !</Text>
+            </View>
+        }
         <CustomAlert visible={alertBox.showBox} onClose={onCloseAlert} title={alertBox.title} message={alertBox.message} icon={alertBox.icon} />
       </View>
     </>
@@ -117,6 +133,7 @@ const styles = StyleSheet.create({
     paddingVertical: verticalScale(10),
     borderTopLeftRadius: scale(10),
     borderTopRightRadius: scale(10),
+    width: moderateScale(85),
     color: "#FFFFFF"
   },
 
@@ -127,7 +144,7 @@ const styles = StyleSheet.create({
 
   row: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    columnGap: moderateScale(30),
     alignItems: 'center',
     paddingHorizontal: moderateScale(20),
     paddingVertical: verticalScale(15),
@@ -138,7 +155,7 @@ const styles = StyleSheet.create({
 
   cell: {
     fontSize: scale(14),
-    width: moderateScale(77),
+    width: moderateScale(87),
     color: "#000000",
   },
 
